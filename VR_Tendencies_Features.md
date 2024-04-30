@@ -42,3 +42,27 @@ These feature developments and applications show the progress of VR technology i
 
 这些功能的发展和应用展示了VR技术在多感官体验和交互设计方面的进步，不仅提升了用户体验的质量，也为不同领域的研究和应用提供了强大的工具。
 
+**VR tasks to assess kinesthetic changes**
+
+When conducting a virtual task where users are comparing a design piece and modifying a similar design piece (e.g., changing line width, adding symbols, and changing color schemes), with a countdown timer provided, the following hypotheses can be made to associate changes in the kinesthetic system (such as head turns, eye movements, and hand drawing accuracy) with changes in the external environment's comfort:
+
+1. **visual comfort**:
+   - Hypothesis: If the virtual environment is more comfortable, users may experience less eye fatigue, reducing the blink rate and increasing the accuracy of eye movements.
+
+2. **Background Noise Level**:
+   - Hypothesis: Working in a virtual environment with a lower noise level may make users feel more relaxed, reducing involuntary eye twitches or head turns due to stress.
+
+**Personal Fans or Air Circulators:**
+Controlling personal fans or air circulators within a virtual reality (VR) system can be achieved through the integration of IoT (Internet of Things) devices and smart home technologies. Here's how this can be done:
+
+1. **Smart Plugs**:
+   - Connect fans or air circulators to smart plugs that can be controlled remotely. These plugs can be turned on or off, and in some cases, have their speed settings adjusted through a companion app or virtual reality interface.
+
+2. **Direct Integration**:
+   - Some fans and air circulators are available as "smart" devices with built-in Wi-Fi capabilities. These can be controlled natively through a VR system by integrating the fan's API into the VR software.
+
+3. **VR Controller**:
+   - Use the VR controller to simulate the operation of a fan or air circulator. The VR system can be programmed to send control signals to the connected smart device when certain gestures or button presses are made.
+
+4. **Voice Commands**:
+   - Integrate voice recognition within the VR system to allow users to control fans using voice commands. This can be done through existing virtual assistants that are IoT-enabled, like Amazon Alexa or Google Assistant.
