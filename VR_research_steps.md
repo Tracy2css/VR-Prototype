@@ -54,6 +54,28 @@ Suppose there are four experimental conditions: Control (C), Experimental Group 
    - Compare and analyze the performance of participants under different experimental conditions to determine the impact of various sensory stimuli combinations.
    - Use statistical tests such as repeated measures ANOVA, paired t-tests, or other relevant methods to assess significant differences in the data.
 
-### Conclusion
+### Game Start:
+- Select positions
+- move to the prefered postion, "I would like to sit here"
+- hand controller point to the computer monitor
+- "confirm"
 
-This repeated measures design allows researchers to effectively evaluate the impact of multisensory stimuli on the same group of participants while controlling individual differences. This approach enhances the precision of measuring and understanding the effects of different sensory stimuli combinations on user experience and behavior. By implementing this method, the virtual environment becomes not only a reflection of user preferences but also a dynamic space that provides essential data for optimizing user experience based on robust scientific evidence. This comprehensive approach ensures that the virtual environment is more vibrant and responsive to user needs, laying a solid foundation for future enhancements based on the study's findings.
+### Tutorial:
+
+### C(Control Group):
+##### ***Duration: 8 min***
+- Activate Visual and Auditory Items
+> **Interaction:** Use gaze tracking or the controller to point at and activate items without any actual interaction adjustments.
+> **Observation:** Observe how participants' preferences for changing the same items in the environment vary under different experimental sequences.
+- Inquire About Desire to Adjust Design Properties
+> **Interaction:** After item activation, a simple yes/no query interface pops up, and participants make selections using the controller or head movements. The selections are multiple choices to adjust design properties for one activated item.
+> **Observation:** Analyze whether participants' preferences for potential design changes differ under different experimental sequences and conditions.
+- Observe Eye Movements and Basic Motion Behavior
+> **Observation:** Use built-in eye tracking SDK to observe participants' eye movements and head orientations during the VR experience.
+> **Interaction:** 
+> Compare the duration and focus points of gaze pre- and post-design changes to identify shifts in attention — are participants more engaged with modified objects?
+> Changes in Exploration Patterns: Examine if participants’ exploration patterns change due to design adjustments — for instance, do changes in light lead to longer stares at previously less-noticed objects?
+
+### E1:
+### E2:
+### E3:
