@@ -55,26 +55,82 @@ Suppose there are four experimental conditions: Control (C), Experimental Group 
    - Use statistical tests such as repeated measures ANOVA, paired t-tests, or other relevant methods to assess significant differences in the data.
 
 ---
-## Prototype B
 **Original visual settings**: mornitor, keyborads, and a mouse
 **Original background sounds**: keyboard, and mouse click
 > 
 > **Visual Adjustments (VA)**
-> - Light Adjustment: Participants adjust brightness and color temperature of individual lighting devices.
+> - Light Adjustment: Participants adjust brightness and color temperature of individual lighting devices, natural lights through the blinder (sit closed to the window).
 > - Material Adjustment: Participants select and modify object materials, including the divider, table, wall, sound box, and desk surface.
-> - Customized items: calendar, books, photo frames, toys, and vegetations
+> Customized items: calendar, books, photo frames, toys, and vegetations
 >
 > **Auditory Adjustments (AA)** 
-> - Background noise level: adjust the height of the 
+> - Background noise level: adjust the height and material of the divider
 > - Background music: activate the sound box, switch across classic music, Jazz, anime...[original sound level will be reduced]
 > - Background natural sounds: activate the sound box, switch across bird song, forest ambience, water streams, ocean waves [original sound level will be reduced]
 >
 > **Thermal Adjustments (TA)** 
 > Portable Neck Fans can be used for cooling/warming
+---
+## Prototype A [from Emotiv to Galea / from Galea to Emotiv]
+### Tutorial :
+##### VR session: 10 min
+guidance for VA + AA + TA in an exisiting virtual enviroonment 
+
+### Game Start [Emotiv to Galea]:
+
+## C (Control Group: original settings):
+##### VR session: 8 min
+- Activate Visual and Auditory Items
+> **Interaction:** Use gaze tracking or the controller to point at and activate items without any actual interaction adjustments.
+> **Observation:** Observe how participants' preferences for changing the same items in the environment vary under different experimental sequences.
+- Inquire About Desire to Adjust Design Properties
+> **Interaction:** After item activation, a simple interface pops up, and participants make selections using the controller. The selections are multiple choices to adjust design properties for one activated item with gif/video examples.
+> **Observation:** Analyze whether participants' preferences for potential design changes differ under different experimental sequences and conditions.
+
+##### Cognition performance test: less than 7 min [To(cpt)]
+##### Survey in the virtual environment: [To(s)]
+
+### E(a) (Galea + Survey in the real world):
+##### VR session: about 15 min 
+- Design adjustment: about 5 min [Ta(v01)]
+> VA + AA + TA in the middle sitting position
+- Observation and Immersive Experience: 3min
+>- After a confirmation of completing the adjustment sessions, participants can stand up and look around the unmodified environment, and enjoy their optimised design outcomes. 
+>- Participants are encouraged to sit again and talk their modifications in the immersive experieneces with the headset.
+##### Cognition performance test: less than 7 min [Ta(cpt)]
+##### Survey: less than 8 min [Ta(s)]
+
+### E(b) (Galea + Survey in the virtual world):
+##### VR session: about 15 min 
+- Design adjustment: about 5 min [Tb(v01)]
+> VA + AA + TA in the sitting position closed to the window
+- Observation and Immersive Experience: 3min
+>- After a confirmation of completing the adjustment sessions, participants can stand up and look around the unmodified environment, and enjoy their optimised design outcomes. 
+>- Participants are encouraged to sit again and talk their modifications in the immersive experieneces with the headset.
+##### Cognition performance test: less than 7 min [Tb(cpt)]
+##### Survey: less than 8 min [Tb(s)]
+
+### E(c) (Emotiv + Survey in the virtual world):
+### Basic Tutorial in the new headset: 5 min
+##### VR session: about 15 min 
+- Design adjustment: about 5 min [Tc(v01)]
+> VA + AA + TA in the sitting position closed to the window
+- Observation and Immersive Experience: 3min
+>- After a confirmation of completing the adjustment sessions, participants can stand up and look around the unmodified environment, and enjoy their optimised design outcomes. 
+>- Participants are encouraged to sit again and talk their modifications in the immersive experieneces with the headset.
+##### Cognition performance test: less than 7 min [Tc(cpt)]
+##### Survey: less than 8 min [Tc(s)]
+---
+### Prototype: data collection
+#### Subjective Feedback:
+
+#### Objective Feedback
+---
+## Prototype B
 
 ### Tutorial :
-##### ***Duration: 10 min***
-
+##### VR session: 10 min
+>VA + AA + TA in an exisiting virtual enviroonment with guidances
 
 ### Game Start:
 - Select positions
@@ -92,6 +148,7 @@ Suppose there are four experimental conditions: Control (C), Experimental Group 
 > **Observation:** Analyze whether participants' preferences for potential design changes differ under different experimental sequences and conditions.
 
 ##### Cognition performance test: less than 7 min
+##### Survey: less than 8 min
 
 
 ### E1 (Visual + Auditory):
@@ -114,6 +171,7 @@ Suppose there are four experimental conditions: Control (C), Experimental Group 
 >- Participants are encouraged to sit again and talk their modifications in the immersive experieneces with the headset.
 
 ##### Cognition performance test: less than 7 min
+##### Survey: less than 8 min
 
 ### E3 (Visual + Auditory + Thermal):
 ##### VR session: 8 min
@@ -125,6 +183,7 @@ Suppose there are four experimental conditions: Control (C), Experimental Group 
 >- Participants are encouraged to sit again and talk their modifications in the immersive experieneces with the headset.
 
 ##### Cognition performance test: less than 7 min
+##### Survey: less than 8 min
 
 ---
 #### Subjective Feedback:
