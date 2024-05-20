@@ -54,28 +54,84 @@ Suppose there are four experimental conditions: Control (C), Experimental Group 
    - Compare and analyze the performance of participants under different experimental conditions to determine the impact of various sensory stimuli combinations.
    - Use statistical tests such as repeated measures ANOVA, paired t-tests, or other relevant methods to assess significant differences in the data.
 
+---
+## Prototype B
+**Original visual settings**: mornitor, keyborads, and a mouse
+**Original background sounds**: keyboard, and mouse click
+> 
+> **Visual Adjustments (VA)**
+> - Light Adjustment: Participants adjust brightness and color temperature of individual lighting devices.
+> - Material Adjustment: Participants select and modify object materials, including the divider, table, wall, sound box, and desk surface.
+> - Customized items: calendar, books, photo frames, toys, and vegetations
+>
+> **Auditory Adjustments (AA)** 
+> - Background noise level: adjust the height of the 
+> - Background music: activate the sound box, switch across classic music, Jazz, anime...[original sound level will be reduced]
+> - Background natural sounds: activate the sound box, switch across bird song, forest ambience, water streams, ocean waves [original sound level will be reduced]
+>
+> **Thermal Adjustments (TA)** 
+> Portable Neck Fans can be used for cooling/warming
+
+### Tutorial :
+##### ***Duration: 10 min***
+
+
 ### Game Start:
 - Select positions
 - move to the prefered postion, "I would like to sit here"
 - hand controller point to the computer monitor
 - "confirm"
 
-### Tutorial:
-
-### C(Control Group):
-##### ***Duration: 8 min***
+### C (Control Group):
+##### VR session: 8 min
 - Activate Visual and Auditory Items
 > **Interaction:** Use gaze tracking or the controller to point at and activate items without any actual interaction adjustments.
 > **Observation:** Observe how participants' preferences for changing the same items in the environment vary under different experimental sequences.
 - Inquire About Desire to Adjust Design Properties
-> **Interaction:** After item activation, a simple yes/no query interface pops up, and participants make selections using the controller or head movements. The selections are multiple choices to adjust design properties for one activated item.
+> **Interaction:** After item activation, a simple interface pops up, and participants make selections using the controller. The selections are multiple choices to adjust design properties for one activated item with gif/video examples.
 > **Observation:** Analyze whether participants' preferences for potential design changes differ under different experimental sequences and conditions.
+
+##### Cognition performance test: less than 7 min
+
+
+### E1 (Visual + Auditory):
+##### VR session: 8 min
+- Design adjustment: 5 min
+> - VA + AA
+
+- Observation and Immersive Experience: 3min
+>- After a confirmation of completing the adjustment sessions, participants can stand up and look around the unmodified environment, and enjoy their optimised design outcomes. 
+>- Participants are encouraged to sit again and talk their modifications in the immersive experieneces with the headset.
+##### Cognition performance test: less than 7 min
+
+### E2 (Visual + Thermal):
+##### VR session: 8 min
+- Design adjustment: 5 min
+> - VA + TA
+
+- Observation and Immersive Experience: 3min
+>- After a confirmation of completing the adjustment sessions, participants can stand up and look around the unmodified environment, and enjoy their optimised design outcomes. 
+>- Participants are encouraged to sit again and talk their modifications in the immersive experieneces with the headset.
+
+##### Cognition performance test: less than 7 min
+
+### E3 (Visual + Auditory + Thermal):
+##### VR session: 8 min
+- Design adjustment: 5 min
+> - VA + AA + TA
+
+- Observation and Immersive Experience: 3min
+>- After a confirmation of completing the adjustment sessions, participants can stand up and look around the unmodified environment, and enjoy their optimised design outcomes. 
+>- Participants are encouraged to sit again and talk their modifications in the immersive experieneces with the headset.
+
+##### Cognition performance test: less than 7 min
+
+---
+#### Subjective Feedback:
+
+#### Objective Feedback:
 - Observe Eye Movements and Basic Motion Behavior
 > **Observation:** Use built-in eye tracking SDK to observe participants' eye movements and head orientations during the VR experience.
 > **Interaction:** 
 > Compare the duration and focus points of gaze pre- and post-design changes to identify shifts in attention — are participants more engaged with modified objects?
 > Changes in Exploration Patterns: Examine if participants’ exploration patterns change due to design adjustments — for instance, do changes in light lead to longer stares at previously less-noticed objects?
-
-### E1:
-### E2:
-### E3:
