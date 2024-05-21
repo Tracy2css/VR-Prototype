@@ -33,9 +33,14 @@ Suppose there are four experimental conditions: Control (C), Experimental Group 
 guidance for VA + AA + TA in an exisiting virtual enviroonment 
 
 ### Game Start [Emotiv to Galea]:
+Select positions
+move to the prefered postion, "I would like to sit here"
+hand controller point to the computer monitor
+"confirm"
 
 ### C (Control Group: original settings):
-##### VR session: 8 min
+***Duration:20min***
+##### VR Experience session: 8 min
 - Activate Visual and Auditory Items
 > **Interaction:** Use gaze tracking or the controller to point at and activate items without any actual interaction adjustments.
 > **Observation:** Observe how participants' preferences for changing the same items in the environment vary under different experimental sequences.
@@ -43,28 +48,29 @@ guidance for VA + AA + TA in an exisiting virtual enviroonment
 > **Interaction:** After item activation, a simple interface pops up, and participants make selections using the controller. The selections are multiple choices to adjust design properties for one activated item with gif/video examples.
 > **Observation:** Analyze whether participants' preferences for potential design changes differ under different experimental sequences and conditions.
 
-##### Cognition performance test: less than 7 min [To(cpt)]
+##### VR Cognition performance test: less than 7 min [To(cpt)]
 ##### Survey in the virtual environment: [To(s)]
 
 ### E(a) (Galea + Survey in the real world):
-##### VR session: about 15 min 
+***Duration:20min***
+##### VR Experienec session: about 8 min 
 - Design adjustment: about 5 min [Ta(v01)]
 > VA + AA + TA in the middle sitting position
 - Observation and Immersive Experience: 3min
 >- After a confirmation of completing the adjustment sessions, participants can stand up and look around the unmodified environment, and enjoy their optimised design outcomes. 
 >- Participants are encouraged to sit again and talk their modifications in the immersive experieneces with the headset.
-##### Cognition performance test: less than 7 min [Ta(cpt)]
+##### VR Cognition performance test: less than 7 min [Ta(cpt)]
 ##### Survey: less than 8 min [Ta(s)]
 
 ### E(b) (Galea + Survey in the virtual world):
-##### VR session: about 15 min 
+##### VR session: about 8 min 
 - Design adjustment: about 5 min [Tb(v01)]
 > VA + AA + TA in the sitting position closed to the window
 - Observation and Immersive Experience: 3min
 >- After a confirmation of completing the adjustment sessions, participants can stand up and look around the unmodified environment, and enjoy their optimised design outcomes. 
 >- Participants are encouraged to sit again and talk their modifications in the immersive experieneces with the headset.
 ##### Cognition performance test: less than 7 min [Tb(cpt)]
-##### Survey: less than 8 min [Tb(s)]
+##### Survey: about 5 min [Tb(s)]
 
 ### E(c) (Emotiv + Survey in the virtual world):
 ### Basic Tutorial in the new headset: 5 min
@@ -85,7 +91,7 @@ guidance for VA + AA + TA in an exisiting virtual enviroonment
 ## Prototype B
 
 ### Tutorial :
-##### VR session: 10 min
+##### VR Experience session: 10 min
 >VA + AA + TA in an exisiting virtual enviroonment with guidances
 
 ### Game Start:
@@ -95,7 +101,7 @@ guidance for VA + AA + TA in an exisiting virtual enviroonment
 - "confirm"
 
 ### C (Control Group):
-##### VR session: 8 min
+##### VR Experience session: 8 min
 - Activate Visual and Auditory Items
 > **Interaction:** Use gaze tracking or the controller to point at and activate items without any actual interaction adjustments.
 > **Observation:** Observe how participants' preferences for changing the same items in the environment vary under different experimental sequences.
@@ -103,22 +109,22 @@ guidance for VA + AA + TA in an exisiting virtual enviroonment
 > **Interaction:** After item activation, a simple interface pops up, and participants make selections using the controller. The selections are multiple choices to adjust design properties for one activated item with gif/video examples.
 > **Observation:** Analyze whether participants' preferences for potential design changes differ under different experimental sequences and conditions.
 
-##### Cognition performance test: less than 7 min
+##### VR Cognition performance test: less than 7 min
 ##### Survey: less than 8 min
 
 
 ### E1 (Visual + Auditory):
-##### VR session: 8 min
+##### VR Experience session: 8 min
 - Design adjustment: 5 min
 > - VA + AA
 
 - Observation and Immersive Experience: 3min
 >- After a confirmation of completing the adjustment sessions, participants can stand up and look around the unmodified environment, and enjoy their optimised design outcomes. 
 >- Participants are encouraged to sit again and talk their modifications in the immersive experieneces with the headset.
-##### Cognition performance test: less than 7 min
+##### VR Cognition performance test: less than 7 min
 
 ### E2 (Visual + Thermal):
-##### VR session: 8 min
+##### VR Experience session: 8 min
 - Design adjustment: 5 min
 > - VA + TA
 
@@ -126,11 +132,11 @@ guidance for VA + AA + TA in an exisiting virtual enviroonment
 >- After a confirmation of completing the adjustment sessions, participants can stand up and look around the unmodified environment, and enjoy their optimised design outcomes. 
 >- Participants are encouraged to sit again and talk their modifications in the immersive experieneces with the headset.
 
-##### Cognition performance test: less than 7 min
+##### VR Cognition performance test: less than 7 min
 ##### Survey: less than 8 min
 
 ### E3 (Visual + Auditory + Thermal):
-##### VR session: 8 min
+##### VR Experience session: 8 min
 - Design adjustment: 5 min
 > - VA + AA + TA
 
@@ -138,7 +144,7 @@ guidance for VA + AA + TA in an exisiting virtual enviroonment
 >- After a confirmation of completing the adjustment sessions, participants can stand up and look around the unmodified environment, and enjoy their optimised design outcomes. 
 >- Participants are encouraged to sit again and talk their modifications in the immersive experieneces with the headset.
 
-##### Cognition performance test: less than 7 min
+##### VR Cognition Performance Test: less than 7 min
 ##### Survey: less than 8 min
 
 ---
