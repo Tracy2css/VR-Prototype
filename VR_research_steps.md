@@ -153,11 +153,115 @@ hand controller point to the computer monitor
 
 #### Objective Feedback:
 - Observe Eye Movements and Basic Motion Behavior
-> **Observation:** Use built-in eye tracking SDK to observe participants' eye movements and head orientations during the VR experience.
-> **Interaction:** 
-> Compare the duration and focus points of gaze pre- and post-design changes to identify shifts in attention — are participants more engaged with modified objects?
-> Changes in Exploration Patterns: Examine if participants’ exploration patterns change due to design adjustments — for instance, do changes in light lead to longer stares at previously less-noticed objects? 
+To effectively measure the changes in user behavior and comfort in a VR environment, especially during the pre-adjustment, during-adjustment, and post-adjustment phases, you need to directly measure specific data points related to head and eye movements. These measurements will help you calculate meaningful metrics that reflect user behavior and comfort changes.
 
+Here is a breakdown of what data to measure and how to calculate the relevant metrics in English:
+
+### 1. **Head Movement Metrics**
+
+#### Data to Measure
+
+- **Head Position and Orientation**: Track the 3D position (x, y, z coordinates) and the orientation (pitch, yaw, roll angles) of the user’s head over time.
+
+#### Metrics to Calculate
+
+- **Head Rotation Frequency**
+  - **Description**: The number of times the head orientation changes direction per unit of time, indicating how often the user is looking around.
+  - **Calculation**: Count the number of times the head changes direction significantly (beyond a threshold angle) in a given period and divide by the duration of that period.
+  
+  ```python
+  rotation_changes = sum(1 for i in range(1, len(orientations)) if abs(orientations[i] - orientations[i-1]) > threshold)
+  rotation_frequency = rotation_changes / total_time
+  ```
+
+- **Head Movement Range**
+  - **Description**: The range of head movement across different axes, showing how much the user moves their head.
+  - **Calculation**: Find the maximum and minimum pitch, yaw, and roll angles during the observation period and compute the range for each axis.
+  
+  ```python
+  pitch_range = max(pitch_angles) - min(pitch_angles)
+  yaw_range = max(yaw_angles) - min(yaw_angles)
+  roll_range = max(roll_angles) - min(roll_angles)
+  ```
+
+- **Head Stability**
+  - **Description**: Measures the steadiness of the head position, indicating user comfort and focus.
+  - **Calculation**: Compute the standard deviation of head positions over time. Lower values indicate more stability.
+  
+  ```python
+  stability = sqrt(sum((x - mean_x)^2 + (y - mean_y)^2 + (z - mean_z)^2 for x, y, z in positions) / len(positions))
+  ```
+
+### 2. **Eye Tracking Metrics**
+
+#### Data to Measure
+
+- **Gaze Points**: Capture the coordinates of the user's gaze on the screen or within the environment over time.
+- **Pupillary Response**: Track the diameter of the pupils over time.
+
+#### Metrics to Calculate
+
+- **Gaze Duration**
+  - **Description**: The average time the user spends looking at the same object or area.
+  - **Calculation**: Measure the time between when the gaze point hits an object or area and when it changes, then average these times.
+  
+  ```python
+  gaze_durations = [end_time - start_time for start_time, end_time in gaze_periods]
+  average_gaze_duration = sum(gaze_durations) / len(gaze_durations)
+  ```
+
+- **Gaze Change Frequency**
+  - **Description**: The rate at which the gaze point changes from one object or area to another.
+  - **Calculation**: Count the number of times the gaze point changes per unit of time.
+  
+  ```python
+  gaze_changes = sum(1 for i in range(1, len(gaze_points)) if gaze_points[i] != gaze_points[i-1])
+  gaze_change_frequency = gaze_changes / total_time
+  ```
+
+- **Pupillary Response**
+  - **Description**: The average change in pupil size, reflecting cognitive load and light adaptation.
+  - **Calculation**: Compute the difference between the maximum and minimum pupil sizes within the observed period.
+  
+  ```python
+  pupillary_response = max(pupil_sizes) - min(pupil_sizes)
+  ```
+
+### 3. **Visual Exploration and Attention Distribution**
+
+#### Data to Measure
+
+- **Gaze Heatmap**: A distribution showing where the user's gaze falls across the visual field.
+
+#### Metrics to Calculate
+
+- **Visual Exploration Range**
+  - **Description**: The spatial extent of gaze points across the visual field.
+  - **Calculation**: Calculate the area covered by the gaze points in the visual field.
+  
+  ```python
+  x_range = max(x_coords) - min(x_coords)
+  y_range = max(y_coords) - min(y_coords)
+  exploration_range = x_range * y_range
+  ```
+
+- **Attention Heatmap**
+  - **Description**: A heatmap showing the density of gaze points over the visual field, indicating areas of high interest.
+  - **Calculation**: Count gaze points within each region of the visual field and normalize by the total number of gaze points.
+  
+  ```python
+  heatmap = [[0]*grid_width for _ in range(grid_height)]
+  for x, y in gaze_points:
+      heatmap[y // cell_height][x // cell_width] += 1
+  normalized_heatmap = [[cell / total_gaze_points for cell in row] for row in heatmap]
+  ```
+
+### Application in Analysis
+
+- **Pre-Adjustment vs. During-Adjustment Analysis**: Compare the metrics from the baseline (pre-adjustment) to those during the adjustment phase to understand how user behavior changes in response to their efforts to optimize comfort.
+- **Long-Term Adaptation Analysis**: By comparing metrics from the baseline and post-adjustment phases, assess how well users adapt to the changes and whether their behavior stabilizes in a way that suggests improved comfort and satisfaction.
+
+By measuring these metrics and analyzing them through the phases of environmental adjustment, you can gain insights into how design changes affect user comfort and behavior, guiding more effective adjustments and enhancements in VR environments.
 ## 20240407 Research Steps
 > - Phase 01 VR training
 > - Phase 02 VR experiment with the original settings
