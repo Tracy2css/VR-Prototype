@@ -3,6 +3,140 @@
 
 python ..\scripts\colmap2nerf.py --video_in tracyd\Room_Video.mp4 --video_fps 2 --run_colmap --overwrite
 
+---
+
+在虚拟现实 (VR) 环境中，注视点 (Fixation) 的确定通常不是直接由眼动追踪设备直接提供的原始数据，而是需要通过对眼部注视位置和停留时间的分析计算得出的。这一过程涉及从眼动追踪设备收集的原始数据中提取有意义的信息，并通过特定的分析方法来识别用户的注视行为。
+
+### 如何确定注视点
+
+注视点的确定通常需要以下步骤和数据处理：
+
+#### 1. **收集原始眼动追踪数据**
+- **眼动追踪设备**提供的基本数据通常包括：
+  - **Gaze Point Coordinates (视线坐标)**：这是用户眼睛注视的屏幕或空间中的点，通常是二维或三维坐标。
+  - **Gaze Direction (视线方向)**：用户眼睛注视的方向，通常表示为一个向量。
+  - **Timestamps (时间戳)**：每个眼动数据点的记录时间。
+  - **Pupil Size (瞳孔大小)**：反映认知负荷的生理指标。
+
+#### 2. **分析眼动数据以确定注视点**
+- 注视点的识别通常依赖于以下分析：
+  - **空间稳定性**：在连续的时间窗口中，如果视线坐标在空间上的变动小于某个阈值（如1°视角或屏幕上的一定像素距离），这段时间内的视线点可以被认为是一次注视。
+  - **时间阈值**：只有当视线在一个小区域内稳定注视超过一个最小时间阈值（通常是 100-200 毫秒）时，该区域才被判断为注视点。
+
+#### 3. **计算注视点**
+- 使用滑动窗口技术计算注视点：
+  - **窗口内稳定性**：在滑动窗口中，如果所有的视线点都在第一个点的一个小邻域内，这个窗口对应的时间段内的视线可以被认为是注视。
+  - **提取注视中心**：窗口内的视线点的中心或平均点通常被记录为注视点的坐标。
+
+### 示例：注视点计算
+
+以下是一个简单的示例，展示如何使用 Python 处理眼动数据来计算注视点。这个过程在实际应用中通常需要根据具体设备和数据格式调整：
+
+```python
+import numpy as np
+
+# 示例数据：时间戳，视线点 X 坐标，视线点 Y 坐标
+timestamps = np.array([0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0])
+gaze_points_x = np.array([100, 102, 103, 101, 100, 250, 249, 251, 248, 247, 249])
+gaze_points_y = np.array([200, 202, 201, 203, 205, 300, 299, 301, 298, 297, 295])
+
+# 设置空间和时间阈值
+space_threshold = 5  # 像素
+time_threshold = 0.2  # 秒
+
+# 计算注视点
+fixations = []
+start = 0
+
+while start < len(timestamps):
+    end = start
+    while end < len(timestamps) and (timestamps[end] - timestamps[start] < time_threshold):
+        if np.max(np.abs(gaze_points_x[start:end+1] - gaze_points_x[start])) > space_threshold or \
+           np.max(np.abs(gaze_points_y[start:end+1] - gaze_points_y[start])) > space_threshold:
+            break
+        end += 1
+    
+    # 如果当前窗口是一个有效的注视
+    if end - start > 1 and (timestamps[end - 1] - timestamps[start]) >= time_threshold:
+        fixation_x = np.mean(gaze_points_x[start:end])
+        fixation_y = np.mean(gaze_points_y[start:end])
+        fixations.append((fixation_x, fixation_y))
+    
+    start += 1
+
+print("Identified Fixations:", fixations)
+```
+
+### 在 Unity 中处理注视点
+
+在 Unity 中，你可以按照类似的逻辑处理从眼动追踪设备获取的数据。以下是一个基本框架，展示如何在 Unity 脚本中处理这些数据：
+
+```csharp
+using System.Collections.Generic;
+using UnityEngine;
+
+public class GazeAnalysis : MonoBehaviour {
+    // 假设这是从眼动追踪设备接收的视线点数据
+    List<Vector2> gazePoints = new List<Vector2>();
+    List<float> timestamps = new List<float>();
+
+    // 空间和时间阈值
+    float spaceThreshold = 5.0f; // 像素
+    float timeThreshold = 0.2f; // 秒
+
+    void Update() {
+        // 假设有一个方法来更新视线点数据
+        UpdateGazeData();
+
+        // 计算注视点
+        List<Vector2> fixations = CalculateFixations(gazePoints, timestamps, spaceThreshold, timeThreshold);
+        foreach (var fixation in fixations) {
+            // 在 Unity 中可视化注视点
+            Debug.DrawRay(Camera.main.ScreenToWorldPoint(new Vector3(fixation.x, fixation.y, Camera.main.nearClipPlane)), Vector3.forward, Color.red, 2.0f);
+        }
+    }
+
+    List<Vector2> CalculateFixations(List<Vector2> gazePoints, List<float> timestamps, float spaceThreshold, float timeThreshold) {
+        List<Vector2> fixations = new List<Vector2>();
+        int start = 0;
+        
+        while (start < gazePoints.Count) {
+            int end = start;
+            while (end < gazePoints.Count && (timestamps[end] - timestamps[start] < timeThreshold)) {
+                if ((gazePoints[start] - gazePoints[end]).magnitude > spaceThreshold) {
+                    break;
+                }
+                end++;
+            }
+
+            if (end - start > 1 && (timestamps[end - 1] - timestamps[start]) >= time_threshold) {
+                Vector2 fixationPoint = Vector2.zero;
+                for (int i = start; i < end; i++) {
+                    fixationPoint += gazePoints[i];
+                }
+                fixationPoint /= (end - start);
+                fixations.Add(fixationPoint);
+            }
+
+            start = end;
+        }
+
+        return fixations;
+    }
+
+    void UpdateGazeData() {
+        // 更新视线数据，这里只是一个示意，具体实现应根据设备 SDK 调整
+        Vector2 newGazePoint = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        gazePoints.Add(newGazePoint);
+        timestamps.Add(Time.time);
+    }
+}
+```
+
+### 总结
+
+注视点的确定是一个基于眼动追踪数据的分析过程，需要通过识别用户视线在时间和空间上的稳定性来完成。这一过程不仅提供了用户视觉注意的深入视角，而且是理解用户行为和设计优化用户界面的重要工具。在 VR 环境中，这种分析尤其关键，因为它可以直接影响到用户体验和界面设计的有效性。
+---
 要在虚拟现实 (VR) 环境中结合使用 Unity 和 VR 设备来完成头部和眼部数据的过滤，并分析用户行为，你可以遵循以下步骤和方法。这些方法涵盖了数据收集、过滤、分析，以及利用 AI 工具来增强行为检测和分析的准确性。
 
 ### 1. **设置 Unity 和 VR 环境**

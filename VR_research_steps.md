@@ -1,3 +1,194 @@
+20240618 Updated
+### Description of Experimental Procedures for Participant 01
+
+Participant 01 will proceed through the experiment in a fixed sequence of workstations (A -> B -> C), with different adjustment conditions randomly assigned at each workstation (Visual, Visual + Auditory, Visual + Auditory + Thermal). Below are the detailed steps of the experimental procedures:
+
+#### Experimental Setup
+
+1. **Workstation sequence**: A -> B -> C
+2. **Adjustment conditions**: Different adjustment conditions are randomly assigned at each workstation.
+
+### Experimental Steps
+
+#### Workstation A
+
+1. **Adjustment condition**: Visual
+2. **Initial measurements**:
+   - Record baseline physiological data, including Skin Conductance (SC), Heart Rate (HR), and EEG brain waves (Alpha waves).
+   - Record the participant's subjective comfort score and work efficiency score (baseline).
+3. **Immersion and task** (5 minutes):
+   - The participant performs a designated task at workstation A, tailored to the experiment's objectives (e.g., solving simple problems, reading).
+   - The adjustment condition is Visual (visual adjustment only).
+4. **Measurement**:
+   - Record the physiological data after the adjustment, including SC, HR, and EEG (Alpha waves).
+   - Record the participant's subjective comfort score and work efficiency score.
+5. **Data storage**:
+   - Record all data in the experimental data table, ensuring data integrity and accuracy.
+
+#### Workstation B
+
+1. **Adjustment condition**: Visual + Auditory
+2. **Initial measurements**:
+   - Record baseline physiological data, including SC, HR, and EEG (Alpha waves).
+   - Record the participant's subjective comfort score and work efficiency score (baseline).
+3. **Immersion and task** (5 minutes):
+   - The participant performs a designated task at workstation B, tailored to the experiment's objectives (e.g., solving simple problems, reading).
+   - The adjustment condition is Visual + Auditory (visual and auditory adjustments).
+4. **Measurement**:
+   - Record the physiological data after the adjustment, including SC, HR, and EEG (Alpha waves).
+   - Record the participant's subjective comfort score and work efficiency score.
+5. **Data storage**:
+   - Record all data in the experimental data table, ensuring data integrity and accuracy.
+
+#### Workstation C
+
+1. **Adjustment condition**: Visual + Auditory + Thermal
+2. **Initial measurements**:
+   - Record baseline physiological data, including SC, HR, and EEG (Alpha waves).
+   - Record the participant's subjective comfort score and work efficiency score (baseline).
+3. **Immersion and task** (5 minutes):
+   - The participant performs a designated task at workstation C, tailored to the experiment's objectives (e.g., solving simple problems, reading).
+   - The adjustment condition is Visual + Auditory + Thermal (visual, auditory, and thermal adjustments).
+
+### Deciding Whether to Store Timestamped Data in a Single Table or Separate Tables per Participant
+
+### Single Table Method
+
+#### Advantages:
+
+1. **Centralized Management**: All data are consolidated into one table, simplifying the data handling and analysis process.
+2. **Uniform Processing**: Facilitates data analysis across all participants, such as calculating overall trends, mean values, or standard deviations.
+3. **Suitable for ML**: Machine learning models typically require large data inputs, and having all data in one table aids in the use of various ML algorithms for training and validation.
+
+#### Disadvantages:
+
+1. **Size Issues**: For large-scale studies, a single table can become very large, leading to slow processing speeds or insufficient memory.
+2. **Complex Data Cleaning**: If the dataset contains errors or missing data, cleaning the entire dataset can become more complicated.
+
+For statistical analysis and machine learning model training, the single table method is generally recommended, especially when the need arises to analyze data holistically or train machine learning models. This approach not only reduces the complexity of data preprocessing but also allows direct use of existing statistical and ML tools, which often assume data is stored in a single, structured format.
+
+### Including Timestamps and Continuous Data Recording in Research
+
+### 1. Increased Data Points
+With continuous measurement, the data points for each experimental condition are no longer limited to a single or a few measurements but can include multiple data points throughout the entire duration of the experiment. For example, if you record data every second, you can collect 60 data points per minute, significantly increasing the number of data points under each condition.
+
+### 2. Improved Time Resolution
+Data with timestamps offer higher time resolution, allowing you to observe subtle changes in physiological responses over time. This is particularly important for understanding how different adjustments lead to drastic or significant physiological changes.
+
+### 3. Capturing Dynamic Changes
+Continuous data recording can reveal dynamic changes in physiological responses, such as rapid increases in heart rate or trends in skin conductance response, which might not be observable with only a few data points.
+
+### 4. More Complex Analyses
+Complex statistical and machine learning techniques such as time series analysis, repeated measures ANOVA, and dynamic system modeling can be applied to this rich dataset to uncover deeper patterns and associations.
+
+### Example of a Data Set
+Suppose you conducted an experiment involving three sensory adjustments (Visual, Auditory, Thermal) and used timestamps to continuously record data. The table below is a possible data structure:
+
+Certainly! If you want to expand the data set example to include at least six participants and show how their physiological responses might be recorded continuously throughout an experiment involving different sensory adjustments, here’s how you can structure the table:
+
+### Expanded Data Set Example with Six Participants
+
+The table below simulates an experimental setting where each participant undergoes the same sequence of sensory adjustments (Visual, Auditory, Thermal) and data is continuously recorded:
+
+| Timestamp  | Participant ID | Adjustment Type | Heart Rate (BPM) | Skin Conductance (µS) | EEG (µV) | Comfort Level |
+|------------|----------------|-----------------|------------------|-----------------------|----------|---------------|
+| 14:23:45   | P1             | Visual          | 72               | 1.2                   | 8.5      | Medium        |
+| 14:23:45   | P2             | Visual          | 68               | 1.0                   | 9.0      | High          |
+| 14:23:45   | P3             | Visual          | 70               | 1.1                   | 8.7      | Medium        |
+| 14:23:45   | P4             | Visual          | 74               | 1.3                   | 8.3      | Low           |
+| 14:23:45   | P5             | Visual          | 69               | 1.2                   | 8.9      | Medium        |
+| 14:23:45   | P6             | Visual          | 71               | 1.2                   | 8.6      | High          |
+| 14:23:46   | P1             | Visual          | 73               | 1.3                   | 8.6      | Medium        |
+| 14:23:46   | P2             | Visual          | 68               | 1.0                   | 9.1      | High          |
+| 14:23:46   | P3             | Visual          | 71               | 1.1                   | 8.8      | Medium        |
+| 14:23:46   | P4             | Visual          | 75               | 1.3                   | 8.2      | Low           |
+| 14:23:46   | P5             | Visual          | 70               | 1.2                   | 8.8      | Medium        |
+| 14:23:46   | P6             | Visual          | 72               | 1.2                   | 8.5      | High          |
+| ...        | ...            | ...             | ...              | ...                   | ...      | ...           |
+
+---
+
+要确保实验设计中包含所有可能的感官调整组合，特别是当你有三种基本调整（Visual、Visual + Auditory、Visual + Auditory + Thermal）时，你可以创建所有可能的序列组合。这里，我们将制定一个包含所有这些组合的列表，适用于每种感官调整可以在三个工位上任意排列的情况。
+
+### 六种感官调整组合
+
+因为有三种调整，并且每种调整可以自由组合，且考虑到每种调整至少出现一次的条件，我们可以设计以下六种不同的组合：
+
+1. **组合 1**：
+   - 工位 A: Visual
+   - 工位 B: Visual + Auditory
+   - 工位 C: Visual + Auditory + Thermal
+
+2. **组合 2**：
+   - 工位 A: Visual + Auditory
+   - 工位 B: Visual + Auditory + Thermal
+   - 工位 C: Visual
+
+3. **组合 3**：
+   - 工位 A: Visual + Auditory + Thermal
+   - 工位 B: Visual
+   - 工位 C: Visual + Auditory
+
+4. **组合 4**：
+   - 工位 A: Visual
+   - 工位 B: Visual + Auditory + Thermal
+   - 工位 C: Visual + Auditory
+
+5. **组合 5**：
+   - 工位 A: Visual + Auditory
+   - 工位 B: Visual
+   - 工位 C: Visual + Auditory + Thermal
+
+6. **组合 6**：
+   - 工位 A: Visual + Auditory + Thermal
+   - 工位 B: Visual + Auditory
+   - 工位 C: Visual
+
+### 使用场景
+
+这些组合可以用于各种研究目的，比如探索不同感官调整对参与者工作效率和舒适度的影响。根据实验的具体需求，可以选择适当的组合进行深入分析。
+
+### Unity Scripts
+
+```csharp
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class SensoryAdjustmentManager : MonoBehaviour
+{
+    private string[][] combinations = new string[][]
+    {
+        new string[] {"Visual", "Visual_Auditory", "Visual_Auditory_Thermal"},
+        new string[] {"Visual_Auditory", "Visual_Auditory_Thermal", "Visual"},
+        new string[] {"Visual_Auditory_Thermal", "Visual", "Visual_Auditory"},
+        new string[] {"Visual", "Visual_Auditory_Thermal", "Visual_Auditory"},
+        new string[] {"Visual_Auditory", "Visual", "Visual_Auditory_Thermal"},
+        new string[] {"Visual_Auditory_Thermal", "Visual_Auditory", "Visual"}
+    };
+
+    public void LoadAdjustmentSequence(int participantId)
+    {
+        int index = (participantId % 6) - 1;
+        if (index < 0) index += 6; // Ensure index is always positive
+
+        string[] selectedCombination = combinations[index];
+        // Load scenes based on the selected combination
+    }
+}
+```
+
+---
+
+### Methods for Analyzing Physiological Data
+
+#### Skin Conductance (SC)
+
+1. **Calculate average and standard deviation**:
+   - Compute the average and standard deviation for SC at each station and under each adjustment condition to assess arousal levels.
+2. **Emotional analysis**:
+   - Higher SC values are typically associated with higher emotional arousal, reflecting the participant's
+
 ## 20240520 Prototype Details
 ### Example of Balanced Crossover Design
 
