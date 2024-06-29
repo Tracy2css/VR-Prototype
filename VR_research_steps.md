@@ -8,6 +8,21 @@ Participant 01 will proceed through the experiment in a fixed sequence of workst
 1. **Workstation sequence**: A -> B -> C
 2. **Adjustment conditions**: Different adjustment conditions are randomly assigned at each workstation.
 
+### Experimental Design Plan
+
+#### Fixed Workstation Sequence, Random Adjustment Conditions
+
+Each participant follows a fixed workstation sequence (A -> B -> C), with different adjustment conditions randomly assigned at each workstation.
+
+### Data Points and Number of Participants Calculation
+
+- At least 10 data points (stream) per combination.
+- 3 workstations × 3 adjustment conditions = 9 combinations.
+- 10 data points per combination, totaling 90 data points.
+- Each participant provides 3 data points.
+- Number of required participants = 90 ÷ 3 = 30 participants.
+
+
 ### Experimental Steps
 
 #### Workstation A
