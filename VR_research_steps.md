@@ -1,3 +1,58 @@
+20240805 Updated
+"Visual" as the baseline condition,
+
+#### Experimental Setup Overview
+- **Workstation Sequence**: A -> B -> C
+- **Adjustment Conditions**: Visual (Baseline), Visual + Auditory, Visual + Auditory + Thermal
+- **Participants**: 6 participants
+
+### Comparative Analysis for 6 Participants
+
+1. **Same Sensory Adjustment Across Different Workstations (with Visual as Baseline)**
+   - **Visual Adjustment** (Baseline):
+     - Workstation A: Participants 1 and 2
+     - Workstation B: Participants 5 and 6
+     - Workstation C: Participants 3 and 4
+   - **Visual + Auditory Adjustment**:
+     - Workstation A: Participants 3 and 4
+     - Workstation B: Participants 1 and 2
+     - Workstation C: Participants 5 and 6
+   - **Visual + Auditory + Thermal Adjustment**:
+     - Workstation A: Participants 5 and 6
+     - Workstation B: Participants 3 and 4
+     - Workstation C: Participants 1 and 2
+
+   **Significance**: By comparing the same sensory adjustment across different workstations, we can determine how the physical environment impacts participant responses while using the Visual adjustment as a baseline for comparison.
+
+2. **Different Sensory Adjustments at the Same Workstation (Including Visual as Baseline)**
+   - **Workstation A**:
+     - Visual (Baseline): Participants 1 and 2
+     - Visual + Auditory: Participants 3 and 4
+     - Visual + Auditory + Thermal: Participants 5 and 6
+   - **Workstation B**:
+     - Visual (Baseline): Participants 5 and 6
+     - Visual + Auditory: Participants 1 and 2
+     - Visual + Auditory + Thermal: Participants 3 and 4
+   - **Workstation C**:
+     - Visual (Baseline): Participants 3 and 4
+     - Visual + Auditory: Participants 5 and 6
+     - Visual + Auditory + Thermal: Participants 1 and 2
+
+   **Significance**: This comparison helps us understand how additional sensory adjustments affect participant responses at the same workstation. The baseline condition (Visual) serves as a reference point for assessing the impact of adding auditory and thermal adjustments.
+
+### Summary of Comparisons
+
+1. **Baseline (Visual) Comparison Across Workstations**:
+   - Analyze how physiological and subjective responses to the Visual adjustment vary across different workstations.
+
+2. **Impact of Additional Adjustments at the Same Workstation**:
+   - Compare Visual (baseline) against Visual + Auditory and Visual + Auditory + Thermal adjustments at each workstation to assess the incremental impact of each adjustment.
+
+3. **Aggregate Data Analysis**:
+   - Combine data across all participants for each sensory adjustment to identify overall trends.
+   - Compare aggregate data for Visual adjustment across all workstations to understand general workstation effects.
+   - Compare aggregate data for Visual + Auditory and Visual + Auditory + Thermal adjustments against the baseline to see the overall impact of these adjustments.
+---
 20240618 Updated
 ### Description of Experimental Procedures for Participant 01
 
