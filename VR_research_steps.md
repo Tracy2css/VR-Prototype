@@ -1,3 +1,135 @@
+20240808 Updated
+### 设计新的实验表格
+
+我们将引入一个新的感官调整（Visual + Thermal）和一个新的工位（D）。每个参与者将体验所有四个工位，每个工位的感官调整是随机排列的。以下是调整后的表格：
+
+#### 实验表格
+
+| Participant | Workstation A                | Workstation B                 | Workstation C                 | Workstation D                |
+|-------------|------------------------------|-------------------------------|-------------------------------|------------------------------|
+| 1           | Visual (Baseline)            | Visual + Auditory             | Visual + Auditory + Thermal   | Visual + Thermal             |
+| 2           | Visual + Auditory            | Visual + Auditory + Thermal   | Visual (Baseline)             | Visual + Thermal             |
+| 3           | Visual + Auditory + Thermal  | Visual (Baseline)             | Visual + Auditory             | Visual + Thermal             |
+| 4           | Visual + Auditory            | Visual + Auditory + Thermal   | Visual (Baseline)             | Visual + Thermal             |
+| 5           | Visual (Baseline)            | Visual + Auditory             | Visual + Auditory + Thermal   | Visual + Thermal             |
+| 6           | Visual + Auditory + Thermal  | Visual (Baseline)             | Visual + Auditory             | Visual + Thermal             |
+
+#### 数据收集表格
+
+每个参与者在每个工位下都将测量以下数据：
+
+| Participant | Workstation | SC   | HR   | EEG  | Comfort Score | Efficiency Score |
+|-------------|-------------|------|------|------|---------------|------------------|
+| 1           | A           | ...  | ...  | ...  | ...           | ...              |
+| 1           | B           | ...  | ...  | ...  | ...           | ...              |
+| 1           | C           | ...  | ...  | ...  | ...           | ...              |
+| 1           | D           | ...  | ...  | ...  | ...           | ...              |
+| 2           | A           | ...  | ...  | ...  | ...           | ...              |
+| 2           | B           | ...  | ...  | ...  | ...           | ...              |
+| 2           | C           | ...  | ...  | ...  | ...           | ...              |
+| 2           | D           | ...  | ...  | ...  | ...           | ...              |
+| ...         | ...         | ...  | ...  | ...  | ...           | ...              |
+
+### 机器学习模型的选择
+
+#### 分类任务
+分类任务主要用于将数据分配到不同的类别。对于这个实验，我们可以进行以下分类任务：
+1. **预测工位类型**：根据生理数据和主观评分预测参与者所处的工位类型（A, B, C, D）。
+2. **预测感官调整**：根据生理数据和主观评分预测参与者所处的感官调整类型（Visual, Visual + Auditory, Visual + Auditory + Thermal, Visual + Thermal）。
+
+#### 回归任务
+回归任务主要用于预测连续变量。对于这个实验，我们可以进行以下回归任务：
+1. **预测舒适度评分**：根据生理数据预测参与者的舒适度评分。
+2. **预测效率评分**：根据生理数据预测参与者的效率评分。
+
+#### 推荐的机器学习模型
+
+**基础模型**：
+1. **决策树**：简单易解释，适用于初步探索。
+2. **随机森林**：通过多个决策树的投票减少过拟合，适用于分类和回归任务。
+3. **线性回归**：用于连续变量预测，适用于回归任务。
+4. **支持向量机（SVM）**：适用于小数据集的分类任务。
+
+**高级模型**：
+1. **神经网络**：适用于复杂的非线性关系，可以用于分类和回归任务。
+2. **长短期记忆网络（LSTM）**：适用于时间序列数据，可以捕捉数据的时序依赖性。
+
+### 基于现有模型和现有调整的VR调研，优化机器学习模型的方向
+
+1. **数据预处理**：确保数据的清洗和标准化，以减少噪声和异常值的影响。
+2. **特征选择和提取**：通过特征工程，选择和提取有助于模型训练的重要特征。
+3. **模型验证**：使用交叉验证技术验证模型的泛化能力，防止过拟合。
+4. **参数调优**：通过网格搜索或随机搜索优化模型参数，提高模型性能。
+5. **模型融合**：结合多个模型的优势，提高预测的准确性和稳定性。
+6. **增加数据量**：如果可能，通过增加参与者数量或多次实验，增加数据量以提高模型的训练效果。
+
+### Conclusion
+
+By focusing on between-participant comparisons and using various machine learning models, we can gain insights into the overall effects of sensory adjustments and workstations on participants. This data-driven approach can inform the design of more comfortable and efficient workspaces.
+
+### Translation to English
+
+### Experimental Design
+
+We will introduce a new sensory adjustment (Visual + Thermal) and a new workstation (D). Each participant will experience all four workstations with sensory adjustments randomly shuffled. Below is the adjusted table:
+
+#### Experiment Table
+
+| Participant | Workstation A                | Workstation B                 | Workstation C                 | Workstation D                |
+|-------------|------------------------------|-------------------------------|-------------------------------|------------------------------|
+| 1           | Visual (Baseline)            | Visual + Auditory             | Visual + Auditory + Thermal   | Visual + Thermal             |
+| 2           | Visual + Auditory            | Visual + Auditory + Thermal   | Visual (Baseline)             | Visual + Thermal             |
+| 3           | Visual + Auditory + Thermal  | Visual (Baseline)             | Visual + Auditory             | Visual + Thermal             |
+| 4           | Visual + Auditory            | Visual + Auditory + Thermal   | Visual (Baseline)             | Visual + Thermal             |
+| 5           | Visual (Baseline)            | Visual + Auditory             | Visual + Auditory + Thermal   | Visual + Thermal             |
+| 6           | Visual + Auditory + Thermal  | Visual (Baseline)             | Visual + Auditory             | Visual + Thermal             |
+
+#### Data Collection Table
+
+For each participant, data will be measured at each workstation:
+
+| Participant | Workstation | SC   | HR   | EEG  | Comfort Score | Efficiency Score |
+|-------------|-------------|------|------|------|---------------|------------------|
+| 1           | A           | ...  | ...  | ...  | ...           | ...              |
+| 1           | B           | ...  | ...  | ...  | ...           | ...              |
+| 1           | C           | ...  | ...  | ...  | ...           | ...              |
+| 1           | D           | ...  | ...  | ...  | ...           | ...              |
+| 2           | A           | ...  | ...  | ...  | ...           | ...              |
+| 2           | B           | ...  | ...  | ...  | ...           | ...              |
+| 2           | C           | ...  | ...  | ...  | ...           | ...              |
+| 2           | D           | ...  | ...  | ...  | ...           | ...              |
+| ...         | ...         | ...  | ...  | ...  | ...           | ...              |
+
+### Machine Learning Model Selection
+
+#### Classification Tasks
+Classification tasks can be used to categorize data into different classes. For this experiment, we can perform the following classification tasks:
+1. **Predict Workstation Type**: Predict the type of workstation (A, B, C, D) based on physiological data and subjective scores.
+2. **Predict Sensory Adjustment**: Predict the type of sensory adjustment (Visual, Visual + Auditory, Visual + Auditory + Thermal, Visual + Thermal) based on physiological data and subjective scores.
+
+#### Regression Tasks
+Regression tasks can be used to predict continuous variables. For this experiment, we can perform the following regression tasks:
+1. **Predict Comfort Score**: Predict the comfort score based on physiological data.
+2. **Predict Efficiency Score**: Predict the efficiency score based on physiological data.
+
+#### Recommended Machine Learning Models
+
+**Basic Models**:
+1. **Decision Tree**: Simple and interpretable, suitable for initial exploration.
+2. **Random Forest**: Reduces overfitting by combining multiple decision trees, suitable for both classification and regression tasks.
+3. **Linear Regression**: Used for predicting continuous variables, suitable for regression tasks.
+4. **Support Vector Machine (SVM)**: Suitable for classification tasks with small datasets.
+
+**Advanced Models**:
+1. **Neural Networks**: Suitable for complex nonlinear relationships, can be used for both classification and regression tasks.
+2. **Long Short-Term Memory (LSTM) Networks**: Suitable for time-series data, can capture temporal dependencies in the data.
+
+### Optimizing Machine Learning Models for VR Research
+
+1. **Data Preprocessing**: Ensure data is cleaned and standardized to reduce noise and outliers' impact.
+2. **Feature Selection and Extraction**: Use feature engineering to select and extract important features that contribute to model training.
+3. **Model Validation**: Use cross-validation techniques to validate the model's generalizability and prevent over
+---
 20240805 Updated
 "Visual" as the baseline condition,
 
