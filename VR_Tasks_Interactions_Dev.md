@@ -1,13 +1,59 @@
-## VR Tasks and Interactions in the Preliminary Test 
-*<span style="color:gray">(MSA + Cognition Test + Emotiv 32 Channel FLEX 2 Gel vs. MN8 – 2 Channel EEG Earbuds)*</span>
 
+
+
+
+### suggections
+- put parcipants in the office at the loading page
+- hightlight the location of the workstation
+- instruction with audio (multisenosry experience)
+- left hand model to show 
+- reasons for choosing the materal(more reflections/acoustic/thermal/visual quality)
+- **critically analyse the funcitons that will be added**
+- proposal of the budget, potential outcomes, sapce booking/device/requirement, duration for tests
+
+---
+### New Design Interactions in VR environment
+
+
+
+---
+
+### **Analysis of Material Selection and Sensory Experience**
+
+1. **Wall Material**:
+   - **Matte gray walls**: Chosen for their low reflectivity, matte walls reduce light glare, making them ideal for extended work periods where comfort and reduced visual fatigue are crucial. This material creates a more calm and subdued visual experience, suitable for focus-driven tasks.
+   - **Glass surface**: Highly reflective, glass surfaces increase brightness and spatial perception by bouncing light around the environment. However, prolonged exposure to such brightness may cause eye strain or distractions, especially in high-glare settings. This material offers an engaging visual experience but may challenge comfort over long durations.
+
+2. **Desk Material**:
+   - **Natural wood**: Selected for its warm, tactile feel, wood desks promote comfort during long working hours. The natural texture adds a sense of relaxation and connection to nature, supporting a more calming sensory environment. This material provides both visual and tactile comfort, enhancing multisensory well-being.
+   - **Marble**: With its cold, hard texture, marble desks offer a sleek, minimalist aesthetic. However, the coldness may lead to discomfort over extended periods, making it more suited for short, intensive tasks. The clean, reflective surface offers a modern, professional look but could induce sensory fatigue in a static environment.
+
+3. **Floor Material**:
+   - **Thick carpet**: Carpet was chosen for its ability to absorb sound, reducing ambient noise and creating a quieter, more focused auditory experience. This soft material also adds to physical comfort, especially for environments where users might spend long hours. The reduced sound reflection helps mitigate distractions and improves concentration.
+   - **Tile flooring**: Hard surfaces like tile reflect sound, creating more echo and a lively atmosphere. This auditory quality might be beneficial in dynamic, collaborative spaces but could hinder focus in individual workstations. The harder material also creates a more formal, structured auditory environment, stimulating engagement in active tasks.
+
+---
+
+### **Sensory Experience Correspondence**
+
+- **Visual Sensory Experience**: Materials like **matte walls** and **natural wood** desks support a calming, comfortable environment that reduces sensory overload, making them suitable for longer work sessions. These materials align with visual comfort and tactile satisfaction, contributing to a grounded, immersive workspace.
+  
+- **Auditory Sensory Experience**: Soft materials like **carpet** and **heavy curtains** provide sound absorption, enhancing acoustic comfort. These materials help create a quiet and focused space, reducing distractions from external noise. In contrast, reflective materials like **tile flooring** amplify sound, offering a more dynamic auditory experience, which might be stimulating in collaborative or short-burst work environments.
+
+These material selections represent key sensory differences, allowing the experiment to analyze how distinct textures and acoustic properties affect cognition, comfort, and productivity in a VR-based open workstation.
+---
+
+### VR Interaction Tasks
+| **Visual Task 01** | **Visual Task 02** | **Auditory Task 01** | **Auditory Task 02** | **Thermal Task 01** | **Thermal Task 02** |
+|--------------------|--------------------|----------------------|----------------------|---------------------|---------------------|
+| Adjusting Lighting to Improve Visibility | Personalising Workspace Appearance | Positioning Movable Acoustic Barriers | Picking up a Personal Headphone | Adaptive Cooling/Heating for Focus | Manual and Auto Mode Combination for Hybrid Comfort |
 ### 1. Visual Adjustment Task Design
 
 #### **1.1 Visual Task 01**: Adjusting Lighting to Improve Visibility
 - **Scenario**: The documents on the desk are too dark to read clearly due to inadequate lighting.
 - **Interaction**:
   - ***Open Blinds**: Participants can walk to virtual windows and interact with the blinds by ==clicking virtual control buttons== to let in more natural light.*
-  - ***Adjust Artificial Lighting**: Use a ==virtual control panel== to adjust brightness and color temperature by ==sliding adjustment bars==.* 
+  - ***Adjust Artificial Lig hting**: Use a ==virtual control panel== to adjust brightness and color temperature by ==sliding adjustment bars==.* 
     - *Options include increasing brightness, switching between warm and cool light.*
 - **Gamification**:
   - *Once the participant achieves optimal lighting, a soft notification appears:"Lighting adjusted for optimal visibility!"*
@@ -19,12 +65,11 @@
     - *Wall Customisation: Apply different textures or colors to the walls, such as paint, wallpaper, or murals*.
     - *Desktop Themes: Change the material or color of the desktop surface (e.g., wood grain, glass, metal)*.
   - ***Add Personal Items**: Participants can select from a ==virtual catalog== to add items like animal photos, plants, figurines, or calendar to their desk.*
-    - *Placement: Use ==drag-and-drop mechanics== to place items in desired locations* 
-  <u>==[Q: much easier to click and place in the predefined locations?]== </u> 
+    - *Placement: Use ==drag-and-drop mechanics== to place items in desired locations, pick up and change the location*  
 - **Gamification**:
   - *When participants complete their personalisation, a notification appears:"Workspace personalised for comfort!"*
   - *The ==VR controller vibrates lightly== when participants successfully add or customise each personal item*
-### 2. Auditory Adjustment Task Design
+### 2. Auditory Adjustment Task Design (location of the some devices)
 #### **2.1 Auditory Task 01**: Positioning Movable Acoustic Barriers
 - **Scenario**: After adjusting the light for reading the document, the background noise from nearby colleagues, printers, and general office chatter is distracting. Participants can position soundproof dividers or partition panels around their personal area.
 - **Interaction**:
@@ -32,7 +77,7 @@
 - **Gamification**:
   - *Once the participant placed the soundproof divider, different levels of the background noise will be changed accordingly*  <u>==[Q: control by predefined and discrete levels to show the noise change or simulation of the real-world change by physical test and strict calculation?]== </u> 
   - *Virtual Noise Blocking Meter: ==virtual strenghth bars== indicate the changed level of noise.*
-#### **2.2 Auditory Task 02**: Picking up a Personal Headphone 
+#### **2.2 Auditory Task 02**: Picking up a Personal Headphone (change to a new one)
 - **Scenario**: Participants can pick up the headphone from a desk hanger to enjoy music
 - **Interaction**:
   - ***Increase Sound Absorption**: ==Using the VR controller's grab function==, participants can reach out and "grab" the headphones from the hanger by clicking and holding the grab button.*
@@ -41,9 +86,10 @@
     - ***Choose a Playlist**: Scroll through available playlists (Top 10 play musics for working).*
     - ***Adjust Volume**: A volume slider allows participants to control how loud the music is in their headphones.*
     - ***Turn Noise-Canceling On/Off**: Participants can toggle a virtual noise-canceling option to block out ambient sounds*.
+==[**Auditory Task 02**: window open/close (design optimisation for comfort) ]**==
 
 ### 3. Thermal Adjustment Task Design
-#### **3.1 Auditory Task 01**: Adaptive Cooling/Heating for Focus
+#### **3.1 Thermal Task 01**: Adaptive Cooling/Heating for Focus
 - **Scenario**: Participants can activate auto mode (or turn on) of the Dyson fan.
 - **Interaction**:
   - ***Activating Auto Mode of a Dyson fan***: 
@@ -53,7 +99,17 @@
 - **Gamification**:
   - *When the speed or direction is adjusted, the settings of the real fan will be adjusted accordingly*
 
-### 4.Cognition Tests in the Real World
+#### **3.2 Thermal Task 02**: Manual and Auto Mode Combination for Hybrid Comfort
+- **Scenario**: Participants can switch between manual control and automatic adjustments, blending both for a hybrid comfort experience.
+- **Interaction**:
+  - ***Switching Between Modes***: 
+    - *Using the VR controller, participants can ==seamlessly switch between manually adjusting fan settings and letting the fan’s auto mode==.*
+  - ***Setting Fan Intensity***
+    - *Participants can ==adjust the intensity of the air flow== by selecting low, medium, and high*.
+- **Gamification**:
+  - *When the speed or direction is adjusted, the settings of the real fan will be adjusted accordingly*
+  
+### 4.Cognition Tests
 #### 4.1. Stroop Test (Selective Attention and Cognitive Flexibility)
    - Selective Attention
    - Inhibition Control
@@ -63,74 +119,49 @@
 - Attention and Focus
 - Cognitive Load
 ---
-### 3. Thermal Adjustment Task Design
-#### **2.1 Auditory Task 01**: Personal Cooling/Heating for Focus
-- **Scenario**: Participants can adjust the fan’s speed and direction to improve comfort.
-- **Interaction**:
-  - ***Adjusting Fan Speed and fan direction***: 
-    - *Using the VR controller to select the Dyson fan in their workstation, ==a simple control panel== appears, showing a fan speed slider. They can ==adjust the speed of the fan by sliding the control from low to high==.*
-  - *The fan direction can be ==locked in place or set to oscillate to== cover a wider area*.
-- **Gamification**:
-  - *When the speed or direction is adjusted, the settings of the real fan will be adjusted accordingly* 
+| **Visual Task 01** | **Visual Task 02** | **Auditory Task 01** | **Auditory Task 02** | **Thermal Task 01** | **Thermal Task 02** |
+|--------------------|--------------------|----------------------|----------------------|---------------------|---------------------|
+| Adjusting Lighting to Improve Visibility | Personalising Workspace Appearance | Positioning Movable Acoustic Barriers | Picking up a Personal Headphone | Adaptive Cooling/Heating for Focus | Manual and Auto Mode Combination for Hybrid Comfort |
+### 5. VR Tasks and Interactions in the Preliminary Test 
+*<span style="color:gray">
+**Sensory adjustment scenario**: MSA
+**Test:** Cognition Test in the real world + Integrated Physiological Performances (EEG + PPG + GSR)
+**Device comparison**: Emotiv 32 Channel FLEX 2 Gel vs. MN8 – 2 Channel EEG Earbuds
+**VR environment**: Unity Asset*</span>
 
- 
 
----
----
+1st (Only Visual + Auditory Task 01 + EEG Earbuds)
+2nd (V+A Task 01 + Task 02 + Emotiv Flex Gel)
 
-### 5.Research Focus and Potential Contributions
-#### 5.1 **Value of the Research**
-**Understanding Multisensory Impact on Productivity:**
+### 6. VR Tasks and Interactions in Prototype A
+*<span style="color:gray">
+**Sensory adjustment scenario**: VA (visual adjustment) + MSA (visual + auditory + thermal adjustment)
+**Test:** Cognition Test in the RE & VR + Integrated Physiological Performances (EEG + PPG + GSR)
+**Device comparison**: Emotiv 32 Channel FLEX 2 Gel vs. Galea
+**VR environment**: Unity Asset*</span>
 
-   - **Individual Preferences:** By allowing participants to adjust sensory inputs themselves, the research captures how individual preferences influence work performance.
-   - **Performance Metrics:** Collecting data on task efficiency, accuracy, and physiological responses provides insights into the direct impact of sensory environments on productivity.
-**Enhancing Workplace Design:**
+VA (Only Visual Task 01 + Emotiv/Galea)
+MSA 01 (Only Task 01 + Emotiv/Galea)
+MSA 02 (Task 01 + Task 02 + Galea/Emotiv)
 
-   - **Personalized Environments:** Findings can inform the design of future workspaces that accommodate individual sensory preferences, enhancing employee well-being and efficiency.
-   - **Adaptive Systems:** Insights may lead to the development of adaptive environmental control systems that adjust settings in real-time based on user feedback or physiological indicators.
-**Advancements in VR and HCI (Human-Computer Interaction):**
+### 7. VR Tasks and Interactions in Prototype B
+*<span style="color:gray">
+**Sensory adjustment scenario**: VA (visual adjustment) + shuffled [VAA (visual + auditory) + VTA (visual + thermal adjustment) + MSA (visual + auditory + thermal adjustment)]
+**Test:** Cognition Test in the RE/VR + Integrated Physiological Performances (EEG + PPG + GSR)
+**VR environment**: Simulation of HDR Room 516*</span>
 
-   - **Innovative Interaction Techniques:** The study explores novel ways for users to interact with and control their environment, contributing to HCI methodologies.
-   - **Immersive Simulations:** Demonstrates effective integration of gamification and realistic tasks in VR, enhancing the potential of VR as a tool for training and productivity.
-**Insights into Multisensory Integration:**
-   - **Cognitive Processing:** By manipulating sensory inputs, the research sheds light on how humans integrate multisensory information in task performance.
-   - **Optimal Conditions:** Identifies which sensory adjustments most significantly improve comfort and performance, contributing to cognitive ergonomics.
-**Data-Driven Policy and Standards:**
-   - **Workplace Guidelines:** Empirical data can influence organizational policies regarding workspace environments, promoting health and productivity.
-   - **Standardization:** Helps in developing standards for sensory conditions in open workspaces, benefiting industries and regulatory bodies.
 
-#### 5.2 **Potential Research Contributions**
-**Empirical Evidence on Sensory Adjustments:**
-   - **Quantitative Data:** Provides robust data correlating sensory settings with performance and physiological responses, filling gaps in existing literature.
-   - **User Experience Metrics:** Combines subjective feedback with objective measures, offering a comprehensive understanding of user experience.
+| **Sensory Adjustment Scenario** | **Interaction 1** | **Interaction 2** | **Interaction 3** | **Ineraction 4** |
+|------------------------------------|------------|------------|------------|------------|
+| **VA (Visual Adjustment)**         | **Visual Task 01**: Adjusting Lighting to Improve Visibility | **Visual Task 02**: Personalising Workspace Appearance | —          | —          |
+| **VAA (Visual + Auditory Adjustment)** | **Visual Task 01**: Adjusting Lighting to Improve Visibility | **Auditory Task 01**: Positioning Movable Acoustic Barriers | —          | —          |
+| **VTA (Visual + Thermal Adjustment)** | **Visual Task 01**: Adjusting Lighting to Improve Visibility | **Thermal Task 01**: Adaptive Cooling/Heating for Focus | —          | —          |
+| **MSA (Visual + Auditory + Thermal Adjustment)** | **Visual Task 01**: Adjusting Lighting to Improve Visibility | **Auditory Task 02**: Picking up a Personal Headphone | **Thermal Task 02**: Manual and Auto Mode Combination for Hybrid Comfort | **Visual Task 02**: Personalising Workspace Appearance | 
+
+Got it! Let’s focus on the reasoning behind **integrating specific tasks within each sensory adjustment combination** (VA, VAA, VTA, MSA), rather than explaining each task individually. 
+
+- **Cross-Combination Consistency**: **Visual Task 01** is included in all combinations to maintain a consistent baseline.
   
-**Methodological Advancements:**
-   - **Experimental Design:** Introduces a novel experimental setup that balances ecological validity with control, useful for future research in similar domains.
-   - **Multidisciplinary Approach:** Bridges psychology, ergonomics, and technology, promoting interdisciplinary collaboration.
-**Practical Applications:**
-   - **Workspace Optimization Tools:** Insights can lead to the creation of software or applications that help individuals or organizations optimize their environments.
-   - **Training and Development:** Enhances VR training programs by incorporating sensory adjustments that improve learning outcomes.
+- **Diversity in Sensory Modalities**: In each combination, Interaction introduces a **new sensory adjustment**.
 
-**Theoretical Implications:**
-   - **Sensory Processing Theories:** Contributes to theories on how sensory inputs affect cognitive functions like attention, memory, and problem-solving.
-   - **User Engagement Models:** Explores how gamification influences engagement and performance, informing models in educational and organizational psychology.
-
-**Enhancing Well-being and Productivity:**
-   - **Employee Satisfaction:** By understanding how environmental factors affect comfort, organizations can improve employee satisfaction and retention.
-   - **Health Outcomes:** Reducing stress and discomfort through optimized environments can have positive health implications.
-
-#### 5.3 **Conclusion**
-
-The research's value lies in its innovative approach to studying the intersection of multisensory environments, user autonomy, and realistic work tasks within a VR setting. By gamifying sensory adjustments and integrating them into tasks that mirror actual office activities, the study maintains ecological validity while enhancing participant engagement.
-
-**Key Contributions:**
-
-- **Holistic Understanding:** Provides a comprehensive view of how sensory adjustments impact both subjective experiences and objective performance metrics.
-- **Actionable Insights:** Generates practical recommendations for designing workspaces that are both comfortable and conducive to productivity.
-- **Technological Advancements:** Pushes the boundaries of VR applications in professional settings, demonstrating their potential beyond entertainment.
-
-**Implications for Future Research and Practice:**
-
-- **Workplace Design:** Influences the development of adaptable, user-centric work environments in both virtual and physical spaces.
-- **Policy Development:** Informs organizational policies and standards, emphasizing the importance of individual sensory needs.
-- **Further Studies:** Opens avenues for research into specific sensory modalities, long-term effects of environmental adjustments, and applications in other settings like education and healthcare.
+- **Engagement and Avoiding Fatigue**: While the visual baseline task remains constant, other sensory adjustments (such as auditory or thermal controls) are varied to maintain interest. Additionally, ==[Q:workstation change before each adjustment can add minor variants of Visual Task 01.]==
