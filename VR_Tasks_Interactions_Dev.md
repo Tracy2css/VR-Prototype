@@ -1,8 +1,92 @@
+### **Visual Adjustments (Material switch)**
+
+| **Adjustment**         | **Visual Setting**                              | **VR Affordance**            | **Material Examples**                                                                                              | **Design Interaction**                                                                                       |
+|------------------------|-------------------------------------------------|--------------------------------|---------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| **Desk Material**       | - Soft texture <br>- Hard texture               | **Perceived Tactile Affordance**       | - wood-tone Natural wood <br>- white Laminated wood <br>- light gray Felt-covered desk                                                         | Users choose desk material via preview images, with texture influencing tactile comfort and focus.               |
+| **Floor Material**      | - Soft carpet <br>- Hard surface (tile, wood)   | **Spatial & Acoustic Affordance**       | - Carpet <br>- Oak-like Hardwood <br>- Light-coloured Tile                                                                                  | Users select floor material, which affects acoustics and comfort in the workspace.                            |
+| **Wall Material**       | - Matte <br>- Semi-gloss <br>- Fabric-covered acoustic panels  | **Visual & Acoustic Affordance**         | - Matte paint <br>- Semi-gloss paint <br>- Fabric-covered acoustic panels                                             | Users select wall material through visual previews, impacting light reflection and acoustic comfort.           |
+
+---
+
+### **Material Analysis: Desk, Floor, and Wall Materials**
+**Preliminary Test**
+  - Scenario 01: visual material 01 and 02
+  - Scenario 02: visual material 01 and visual + auditory material
+
+#### **Desk Material**:
+1. **Natural wood**: 
+   - Warm, yellow color texture, natural grain**88.
+ 
+2. **Laminated wood**: 
+   - Smooth, white color durable surface.
+
+3. **Felt-covered desk**: 
+   - **Soft, light grey, sound-absorbing surface**.
+   - **Comparison property**: with significant sound-dampening effects, reducing noise from interactions on the desk.
+
+**Analysis**: The desk materials offer a range of **tactile comfort** and **acoustic properties**.
+
+---
+
+#### **Floor Material**:
+
+1. **oak-like Hardwood**:
+   - do not absort sound well
+
+2. **light-coloured Tile**:
+   - do not absort sound well
+
+3. **Dark Grey Carpet**:
+   - **Visual + Auditory impact**: Carpet provides visual warmth and softness while also greatly enhancing acoustic comfort. 
+
+**Analysis**: The floor materials offer a balance of **visual aesthetics** and **acoustic properties**. Hardwood and tile prioritize visual impact, with a focus on creating professional, clean, and modern environments. Carpet, on the other hand, provides both visual warmth and significant sound absorption, making it ideal for spaces requiring acoustic control and comfort.
+
+---
+
+#### **Wall Material**:
+1. **Semi-Gloss Wood**: 
+   - Low reflectivity, smooth finish.
+2. **Matte**: 
+   - Moderate reflectivity.
+   - **Comparison property**: Adds brightness and a more dynamic look, but does not affect sound.
+3. **Fabric-covered acoustic panels**: 
+   - Highly sound-absorptive.
+   - **Comparison property**: Provides strong acoustic control, reducing noise while maintaining a warm, textured visual appeal.
+
+**Analysis**: Both **matte** and **semi-gloss paints** serve purely **visual purposes**, with different light reflectivity levels. **Fabric-covered acoustic panels**, on the other hand, combine **visual texture** with significant **acoustic benefits**, making them ideal for spaces that require sound management along with a visually appealing environment.
+
+---
+### **Auditory Adjustments**
+
+| **Adjustment**         | **Auditory Setting**                            | **VR Affordance**            | **Design Interaction**                                                                                       | 
+|------------------------|-------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------------------------------|
+| **Window Open/Close**   | - Slightly open <br>- Fully open                | **Physical Affordance**           | Users control the window position via sliders to manage external noise levels. A fully open window increases external ambient sounds, while slightly open reduces them. |
+| **Sound Divider**       | - Divider Up <br>- Divider Down                 | **Spatial & Acoustic Affordance** | Users adjust the height or position of the sound divider on their personal workstation. A higher divider reduces external noise, creating a quieter personal space, while lowering it allows more ambient sounds to enter. |
+
+---
+
+### **Personal Adjustments**
+#### **Visual Items** (Scenario 1)
+
+| **Option**               | **Impact on Senses**            | **Unity Interaction**                                   | **Reasoning**                                                                                                                                                                                                                               |
+|--------------------------|---------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **1. Personal mug**       | Visual                          | pre-defined "transformation properties" | reinforcing emotional attachment to the workspace                                                     |
+| **2. Calendar**            | Visual                          | pre-defined "transformation properties" | fits into a professional workspace, visually contributing to a sense of order and focus.                  | **2. Music box**          | Visual + Auditory               | pre-defined "transformation properties" | play music when the item is checked.      |
+| **3. Potted plant**       | Visual                          | pre-defined "transformation properties"          | improve the atmosphere and contributing to mental well-being.   
+
+#### **Visual + Auditory Items** (Scenario 1 + Scenario 2)
+
+| **Option**               | **Impact on Senses**            | **Unity Interaction**                                   | **Reasoning**                                                                                                                                                                                                                               |
+|--------------------------|---------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **1. Mechanical keyboard** | Visual + Auditory               | pre-defined "transformation properties"       | play sounds of keyword typing to simulate its working conditions. |                     | 
+**2. Dyson Fan** | Visual + Auditory               | pre-defined "transformation properties"       | play a gentle humming sound to add a visual dynamic while the sound enhances auditory focus. |
+
+           
 
 
+---
 
-
-### suggections
+### 20241015 suggections
 - put parcipants in the office at the loading page
 - hightlight the location of the workstation
 - instruction with audio (multisenosry experience)
