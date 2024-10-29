@@ -1,4 +1,31 @@
-### Experimental Design Plan
+### 20241015 Updataed Experimental Design Plan
+## Preliminary Test: Check the feasibility of the integrated system of physiological measurement (CADDRIA)
+- Scene: 
+  - template environment
+  - shared workspace closed to the window
+- Object Interaction
+  - pick up/putdown with ray
+  - predefined "transformation properties"
+
+## Prototype A: participant's hardware and software preferences
+- Scene: 
+  - template environment
+  - shared worksapce faced to the window
+  - workmastes added
+- Object Interaction
+  - pick up/putdown with ray
+  - change "transformation properties" with control panels (buttons, slides, toggles)
+- 
+## Prototype B: about 35 particiapants (ML anlysis)
+- Scene: 
+  - HDR room
+  - shared worksapce faced to the window
+  - workmastes added
+- Object Interaction
+  - pick up/putdown with hand models
+  - change "transformation properties" by real actions, grab, zoom, rotate, place...
+
+---
 
 #### Fixed Workstation Sequence, Random Adjustment Conditions
 
