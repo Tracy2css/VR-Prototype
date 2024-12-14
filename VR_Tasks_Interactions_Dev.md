@@ -1,10 +1,53 @@
-### **Visual Adjustments (Material switch)**
+### Wall Surface
+| **Light Reflection** | **Material**         | **Key Features**                                         | **Sound Absorption/Reflection**     | **Best For**                                      |
+|-----------------------|----------------------|---------------------------------------------------------|--------------------------------------|--------------------------------------------------|
+| **Low**              | **Gray-Stained Oak** | - Muted, matte finish with low reflectivity.            <br>- Dark, elegant tone with moderate sound absorption. | **High absorption, low reflection** | Cozy, focused workspaces or quiet zones.         |
+| **Medium**           | **Natural Bamboo**   | - Light-colored surface with moderate reflectivity.     <br>- Eco-friendly, smooth texture.                      | **Moderate absorption/reflection**   | General office walls; bright and welcoming spaces.|
+| **High**             | **Oak**             | - Warm, polished surface with higher reflectivity.      <br>- Classic and durable with a refined appearance.     | **Low absorption, high reflection**  | Feature walls or executive spaces.               |
 
-| **Adjustment**         | **Visual Setting**                              | **VR Affordance**            | **Material Examples**                                                                                              | **Design Interaction**                                                                                       |
-|------------------------|-------------------------------------------------|--------------------------------|---------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| **Desk Material**       | - Soft texture <br>- Hard texture               | **Perceived Tactile Affordance**       | - wood-tone Natural wood <br>- white Laminated wood <br>- light gray Felt-covered desk                                                         | Users choose desk material via preview images, with texture influencing tactile comfort and focus.               |
-| **Floor Material**      | - Soft carpet <br>- Hard surface (tile, wood)   | **Spatial & Acoustic Affordance**       | - Carpet <br>- Oak-like Hardwood <br>- Light-coloured Tile                                                                                  | Users select floor material, which affects acoustics and comfort in the workspace.                            |
-| **Wall Material**       | - Matte <br>- Semi-gloss <br>- Fabric-covered acoustic panels  | **Visual & Acoustic Affordance**         | - Matte paint <br>- Semi-gloss paint <br>- Fabric-covered acoustic panels                                             | Users select wall material through visual previews, impacting light reflection and acoustic comfort.           |
+#### **Light Reflection**
+The light reflection level is influenced by:
+1. **Surface Finish:**
+   - Smooth and polished surfaces (e.g., Oak) reflect more light because they scatter light minimally.
+   - Matte or textured surfaces (e.g., Gray-Stained Oak) diffuse light, resulting in lower reflection.
+2. **Color:**
+   - Lighter colors (e.g., Natural Bamboo) reflect more light, while darker colors (e.g., Gray-Stained Oak) absorb more light.
+
+
+#### **Sound Absorption**
+The sound absorption level is influenced by:
+1. **Porosity and Density:**
+   - Porous materials like **bamboo** tend to absorb more sound by trapping air and reducing echoes.
+   - Dense, hard materials like **oak** reflect sound instead of absorbing it.
+2. **Surface Texture:**
+   - Rough or irregular surfaces (e.g., Gray-Stained Oak) scatter and absorb sound better than smooth, polished surfaces.
+
+### Desk Surface
+Here’s the updated table with **sound absorption** added and explanations for each material:
+
+| **Light Reflection** | **Material**         | **Key Features**                                           | **Sound Absorption**                       | **Best For**                               |
+|-----------------------|----------------------|-----------------------------------------------------------|--------------------------------------------|--------------------------------------------|
+| **Low**              | Rubber              | - Soft, matte surface with low reflectivity.               <br>- Excellent sound absorption due to its flexibility and porosity. | **High**                                    | Collaborative workspaces, high-use areas   |
+| **Medium**           | Matte Laminate      | - Durable and scratch-resistant finish with moderate reflectivity. <br>- Provides moderate sound absorption because of its multi-layer construction. | **Moderate**                                | General office desks                       |
+| **High**             | Tempered Glass      | - Hard, glossy, and smooth surface with high reflectivity. <br>- Poor sound absorption due to its density and rigidity. | **Low**                                     | Executive desks, visually striking spaces  |
+
+#### Analysis:
+
+1. **Rubber (Low Light Reflection, High Sound Absorption):**
+   - **Light Reflection:** The matte finish diffuses light effectively, resulting in minimal glare.
+   - **Sound Absorption:** Its porous and flexible nature absorbs sound efficiently, making it suitable for noise reduction.
+   - **Best For:** Ideal for high-traffic or collaborative spaces where sound dampening and safety (anti-slip) are priorities.
+
+2. **Matte Laminate (Medium Light Reflection, Moderate Sound Absorption):**
+   - **Light Reflection:** Its moderate finish reflects a balanced amount of light, reducing glare while still being functional in office lighting.
+   - **Sound Absorption:** The layered construction absorbs sound moderately, balancing aesthetics and acoustics.
+   - **Best For:** Versatile for general office desks that require durability and a professional appearance.
+
+3. **Tempered Glass (High Light Reflection, Low Sound Absorption):**
+   - **Light Reflection:** Highly reflective and smooth, giving a premium and modern aesthetic.
+   - **Sound Absorption:** Poor at absorbing sound due to its solid and dense structure, reflecting most sound waves.
+   - **Best For:** Suitable for executive desks or areas where a visually striking, modern look is preferred, and sound absorption is less critical.
+
 
 ---
 
@@ -44,10 +87,13 @@
 ---
 
 #### **Wall Material**:
+change the property not the material
+wood but different finishes of the wood 
+  to compare the different properties
 1. **Semi-Gloss Wood**: 
-   - Low reflectivity, smooth finish.
-2. **Matte**: 
    - Moderate reflectivity.
+2. **Matte**: 
+   - Low reflectivity, smooth finish.
    - **Comparison property**: Adds brightness and a more dynamic look, but does not affect sound.
 3. **Fabric-covered acoustic panels**: 
    - Highly sound-absorptive.
@@ -60,8 +106,8 @@
 
 | **Adjustment**         | **Auditory Setting**                            | **VR Affordance**            | **Design Interaction**                                                                                       | 
 |------------------------|-------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------------------------------|
-| **Window Open/Close**   | - Slightly open <br>- Fully open                | **Physical Affordance**           | Users control the window position via sliders to manage external noise levels. A fully open window increases external ambient sounds, while slightly open reduces them. |
-| **Sound Divider**       | - Divider Up <br>- Divider Down                 | **Spatial & Acoustic Affordance** | Users adjust the height or position of the sound divider on their personal workstation. A higher divider reduces external noise, creating a quieter personal space, while lowering it allows more ambient sounds to enter. |
+| **Window Open/Close**   | - Slightly open <br>- Fully open                | **Physical Affordance**           | Users control the window position via sliders to manage external noise levels. |
+| **Sound Divider**       | - Divider Up <br>- Divider Down                 | **Spatial & Acoustic Affordance** | Users adjust the height or position of the sound divider on their personal workstation. |
 
 ---
 
@@ -74,16 +120,25 @@
 | **2. Calendar**            | Visual                          | pre-defined "transformation properties" | fits into a professional workspace, visually contributing to a sense of order and focus.                  | **2. Music box**          | Visual + Auditory               | pre-defined "transformation properties" | play music when the item is checked.      |
 | **3. Potted plant**       | Visual                          | pre-defined "transformation properties"          | improve the atmosphere and contributing to mental well-being.   
 
-#### **Visual + Auditory Items** (Scenario 1 + Scenario 2)
+#### **Visual + Auditory Items** (Scenario 2)
 
-| **Option**               | **Impact on Senses**            | **Unity Interaction**                                   | **Reasoning**                                                                                                                                                                                                                               |
+| **Added Option**               | **Impact on Senses**            | **Unity Interaction**                                   | **Reasoning**                                                                                                                                                                                                                               |
 |--------------------------|---------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **1. Mechanical keyboard** | Visual + Auditory               | pre-defined "transformation properties"       | play sounds of keyword typing to simulate its working conditions. |                     | 
 **2. Dyson Fan** | Visual + Auditory               | pre-defined "transformation properties"       | play a gentle humming sound to add a visual dynamic while the sound enhances auditory focus. |
 
            
-
-
+### 20241030 suggections
+- visual and audio adjustment in one panel 
+- equal numbers of the different adjusments 
+- visual 
+  - not too many things for visul
+  - just curtain and two visual properties mateiral (color, dark to light/cold to warm)
+- audio 
+  - divider height 
+  - two properties material (smooth to rough)
+- thermal
+- 
 ---
 
 ### 20241015 suggections
