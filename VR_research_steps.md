@@ -1,3 +1,136 @@
+20241227 Updated
+
+
+| **Type**                      | **Explanation**                                                                                                                                                                                                                                                   | **Link to Our Experiment**                                                                                                                                                                                                   |
+|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Temporal Alliesthesia**    | - Focuses on how the **same stimuli** feel different as time or internal state changes (e.g., from relaxed to stressed)<br>- Example: A background noise that was tolerable at first can become disruptive once fatigue or tension builds.                          | - We have **two phases** in each workstation (no meeting → meeting).<br>- Users’ state changes over time (phase 1 vs. phase 2), affecting how they perceive the **same** lighting, noise, or temperature.<br>- Cognitive test results and user adjustments in phase 2 often differ from phase 1.            |
+| **Spatial Alliesthesia**     | - Emphasizes how **location** or **positional** differences lead to varied perception of identical stimuli.<br>- Example: The same temperature can be felt differently if you sit near the A/C vent vs. far away.                                                                                       | - We use **four distinct workstations** (A/B/C/D). Each offers unique layout, proximity to noise sources, or air circulation.<br>- Even if physical settings (lighting level, noise baseline) are similar, user experience can shift if they occupy a different position or angle in the same workstation. |
+| **Thermal / Sensory Alliesthesia** | - Highlights how **specific senses** (temperature, noise, lighting) cause different subjective responses if the user’s state shifts.<br>- Example: A certain air-conditioning setting might feel neutral at first, then too warm under stress, prompting an adjustment.                                   | - Workstation **C** and **D** allow **temperature** adjustments (Thermal Alliesthesia).<br>- Workstation **B** and **D** allow **auditory** adjustments (noise tolerance changes).<br>- All stations allow **visual** control, showing how users vary brightness preferences from one phase/state to another. |
+
+---
+
+**Key Takeaways**  
+1. **Temporal Dimension:** Moving from no-meeting to meeting highlights how the same environment can become inadequate or more demanding over time.  
+2. **Spatial Dimension:** Switching among A/B/C/D reveals how location or setup variations alter users’ perception of the same nominal stimuli.  
+3. **Thermal/Sensory Dimension:** Allowing different sensory controls (temperature, noise, lighting) captures how internal state shifts lead to different comfort or performance needs—even when the “objective” settings remain the same.
+
+### 1. How to Respond to Alliesthesia?
+
+1. **Within the Same Workstation, Two Different Phases**  
+   - At each workstation, the user goes from a “no-meeting” phase to an “online meeting” phase, which significantly alters their **physiological/psychological state** (e.g., heart rate, mental focus, stress).  
+   - Alliesthesia states that even if the **physical environment** (lighting, sound level, temperature) stays the same, the user’s **perception** of that environment can change once their internal state switches.  
+   - If the user suddenly becomes more sensitive to noise or temperature under meeting conditions, that illustrates Alliesthesia: **the same stimulus** is perceived differently **because of** the user’s new state.
+
+2. **Providing Multiple Sensory Adjustments to Observe State-Environment Interaction**  
+   - Each workstation (A/B/C/D) allows different adjustment options (only visual, or visual+auditory, or visual+thermal, etc.).  
+   - When the user faces discomfort or distraction during the meeting phase, do they have the ability to fix it by adjusting a specific dimension? If the workstation only supports visual adjustment, they may fail to manage noise, which again exemplifies Alliesthesia: **state changes → stimulus experience changes → the availability of matching sensory controls matters**.
+
+3. **Comparing Cognitive Tests Before and After to Capture State Shifts**  
+   - Running a cognition test at the end of Phase 1 (no meeting) and again at the end of Phase 2 (meeting) highlights whether the **same or similar environment** yields different performance results once the user’s mental/emotional state changes.  
+   - If lack of adequate sensory adjustment correlates with a drop in cognitive performance during the meeting, it supports the Alliesthesia principle: **the user’s internal state** (calm vs. stressed vs. highly focused) **drives** how external stimuli are assessed and how work performance is impacted.
+
+### 2. How Collected Data Guides Research Outcomes
+
+1. **Sensory Adjustment Behavior & Physiological Data**  
+   - Recording how participants adjust lighting, sound, or temperature (frequency, magnitude) alongside heart rate, EDA, EEG readings can reveal:  
+     - In which state are participants most likely to strongly modify a certain sensory parameter?  
+     - Do peak physiological readings align with specific adjustments or discomfort moments?  
+   - **Design implication**: In open-plan offices, offering quick or even automated access to certain sensory controls for high-pressure tasks can be crucial.
+
+2. **Phase-by-Phase Cognitive Test Results**  
+   - By comparing cognition test scores in the no-meeting phase vs. the meeting phase, you can see if participants rely heavily on quietness or thermal comfort to maintain good performance.  
+   - If a multi-sensory workstation (e.g., D) allows the user to preserve high cognitive scores even under meeting conditions, it indicates that **multi-sensory adjustment** substantially helps productivity.  
+   - **Outcome**:  
+     - (1) Confirms the importance of multi-sensory controls under specific conditions;  
+     - (2) Informs office space design that invests in adaptive or adjustable features.
+
+3. **Cross-Workstation, Cross-Phase Analysis**  
+   - Comparing all four workstations across both test phases can quantify which sensory factors become most vital for meetings and which user segments show the largest performance shifts.  
+   - These findings enable **refined office design** solutions: e.g., equipping “high-frequency meeting zones” with superior noise isolation and temperature control, or providing advanced visual adjustments for “individual focus zones.”
+
+4. **Design Optimization & Personalization**  
+   - Eventually, data can lead to **design principles** or **predictive models**:  
+     - Principles: which sensory controls to prioritize in certain work states;  
+     - Models: how to automatically detect a user’s state from physiological or behavioral cues and adapt the environment for maximum comfort and concentration.  
+   - This provides actionable insight for future **open workspace** concepts and **multi-sensory interactive systems**, enabling more personalized and efficient user experiences.
+
+---
+
+
+## 1. Overview
+
+-  **4 workstations (A, B, C, D)**, each offering different combinations of adjustable sensory parameters;
+- Each workstation has **2 phases**:  
+  1. **Phase 1 (no meeting)** – The user adjusts the sensory environment (within that workstation’s constraints) and then completes a cognitive test.  
+  2. **Phase 2 (meeting)** – The user participates in an online/voice meeting, after which they do another cognitive test.  
+- Total cognition tests: **2 tests × 4 workstations = 8 tests** 
+This setup naturally provides two kinds of comparisons:  
+1. **Within the same workstation** (Phase 1 vs. Phase 2).  
+2. **Across different workstations** (A vs. B vs. C vs. D).
+
+---
+
+## 2. Conclusions Within the Same Workstation (Phase 1 vs. Phase 2)
+
+### 2.1 Alliesthesia Insights
+
+1. **State Switching: No Meeting → Meeting**  
+   - Alliesthesia emphasizes that identical physical stimuli (e.g., same lighting, same noise levels) can be perceived differently when a user’s **physiological or psychological state** changes when switching from a more relaxed or routine work mode (Phase 1) to a focused or higher-pressure mode (Phase 2, the meeting).  
+   - If the *same* sensory setup is felt as “fine” in Phase 1 but “too bright/too warm/too noisy” in Phase 2 (or vice versa), that shift illustrates Alliesthesia: the **user’s internal state** affects how the **external environment** is perceived.
+
+2. **Changes in Cognitive Performance**  
+   - If cognitive test results in Phase 2 (post-meeting) significantly differ from Phase 1 (post-regular work), it could mean that entering a meeting (higher arousal/focus) triggered different sensory needs or tolerance levels.  
+   - This is a direct reflection of Alliesthesia: **the same workstation** might yield different performance outcomes simply because the user’s state changed.
+
+3. **Role of Sensory Adjustments**  
+   - If the user senses a mismatch between their new state and the existing environment, they might readjust lighting, temperature, or noise levels.  
+   - Observing a resulting improvement in cognitive scores or subjective comfort supports the Alliesthesia framework: **the user’s internal state shift → environment readjustment → altered performance**.
+       - the same ambient conditions that were initially acceptable or even preferred become less suitable once the user’s internal state changes due to the meeting commencement (due to stress, fatigue, or heightened focus requirements). 
+       - By reconfiguring one or more sensory dimensions—temperature, noise, or lighting—they regain a sense of comfort or restore higher performance levels. 
+
+### 2.2 Design Optimization Implications
+
+1. **Phase 1 vs. Phase 2 Adjustments**  
+   - If many participants consistently report that, in Phase 2, they urgently need to reduce noise or tweak temperature (but they don’t in Phase 1), it indicates **which sensory dimensions** are crucial under high-focus or meeting conditions.  
+   - **Design takeaway**: Potentially offer **customised design options for optimising multisensory experience in open workspace** and implement a **“one-click Meeting Mode”** to automatically handle these **high-priority adjustments** for indoor design optimisation.
+
+2. **Comparing Cognitive Test Differences**  
+   - If participants’ scores in Phase 2 are noticeably lower (or higher) than in Phase 1, it suggests that certain *lack* (or presence) of sensory controls could help or harm cognitive performance during intense tasks.  
+   - Designers can see where **environment changes** might **mitigate** negative effects (e.g., overshadowing fatigue, distractions) or **maintain** high performance under pressure.
+
+3. **Personalization vs. Universal Settings**  
+   - Some users might be more sensitive to light; others more sensitive to noise or temperature.  
+   - **Design takeaway**: Provide flexible, easily reconfigurable workstations or automatically sense user state changes (like “meeting in progress”) and **adapt accordingly**.
+
+---
+
+## 3. Cross-Workstation Conclusions (A, B, C, D)
+
+1. **Effect of Different Sensory Control Levels**  
+   - Compare how the same user’s performance changes from workstation A (only visual) to workstation D (visual+auditory+thermal).  
+   - In meeting scenarios (Phase 2), do participants at workstation D maintain a higher cognitive score or comfort level, thanks to more complete sensory adjustment options?
+
+2. **Phase 1 → Phase 2 “Delta” Across Workstations**  
+   - calculate each workstation’s difference between cognitive scores in Phase 2 vs. Phase 1.  
+     - A large negative gap might mean that users, lacking key sensory controls (e.g., no temperature or noise control), cannot adapt to the more demanding meeting condition.  
+     - A small or positive gap at another workstation suggests more robust sensory solutions that help keep performance steady or even enhance it.
+
+3. **Same Phase, Different Workstations**  
+   - Compare all Phase 1 scores across A, B, C, D to see if multi-sensory options matter in everyday (non-meeting) tasks.  
+   - Compare all Phase 2 scores across A, B, C, D to see if having more sensory controls (like noise reduction or temperature adjustment) is significantly beneficial during high-focus meeting scenarios.
+
+---
+
+## 4. Key Takeaways for Design Optimization
+1. **Intra-Workstation (Phase 1 vs. Phase 2)**  
+   - **Alliesthesia**: The environment that felt fine in a calm state can feel inadequate or distracting under meeting pressure.  
+   - **Design**: Offer quick or automated transitions between “standard work mode” and “meeting mode,” ensuring that *critical sensory controls* (noise, temperature, lighting) can adapt rapidly.
+
+2. **Cross-Workstation (A vs. B vs. C vs. D)**  
+   - **Alliesthesia**: The more comprehensive the sensory control, the easier it is for users to match their environment to their internal states (especially under changing demands).  
+   - **Design**: Demonstrates potential ROI for investing in more multi-sensory control capabilities in an open workspace. If data shows workstation D significantly improves meeting performance or user satisfaction, it justifies advanced solutions.
+
+---
 20240808 Updated
 ### 设计新的实验表格
 
