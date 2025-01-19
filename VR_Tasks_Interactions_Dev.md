@@ -1,9 +1,15 @@
 ### Wall Surface
+| **Wall Material (Sound Absorption)** | **125Hz** | **250Hz** | **500Hz**| **1KHz**|
+|-----------------------|----------------------|---------------------------------------------------------|--------------------------------------|--------------------------------------------------|
+Oak: Timber boards, 100mm wide, 10mm gaps, 500mm airspace with mineral wool |0.05|0.25|0.60|0.15|
+Natural Bamboo: Wood boards on on joists or battens|0.15|0.20|0.1|0.1| 
+Gray-Stained Oak: Acoustic timber wall panelling|0.18|0.34|0.42|0.59| 
+
 | **Light Reflection** | **Material**         | **Key Features**                                         | **Sound Absorption/Reflection**     | **Best For**                                      |
 |-----------------------|----------------------|---------------------------------------------------------|--------------------------------------|--------------------------------------------------|
-| **Low**              | **Gray-Stained Oak** | - Muted, matte finish with low reflectivity.            <br>- Dark, elegant tone with moderate sound absorption. | **High absorption, low reflection** | Cozy, focused workspaces or quiet zones.         |
-| **Medium**           | **Natural Bamboo**   | - Light-colored surface with moderate reflectivity.     <br>- Eco-friendly, smooth texture.                      | **Moderate absorption/reflection**   | General office walls; bright and welcoming spaces.|
-| **High**             | **Oak**             | - Warm, polished surface with higher reflectivity.      <br>- Classic and durable with a refined appearance.     | **Low absorption, high reflection**  | Feature walls or executive spaces.               |
+| **Low**              | **Gray-Stained Oak** | - Muted, matte finish with low reflectivity.            <br>- Dark, elegant tone with moderate sound absorption. | **High absorption:0.75, low reflection** | Cozy, focused workspaces or quiet zones.         |
+| **Medium**           | **Natural Bamboo**   | - Light-colored surface with moderate reflectivity.     <br>- Eco-friendly, smooth texture.                      | **Moderate absorption:0.5/reflection**   | General office walls; bright and welcoming spaces.|
+| **High**             | **Oak**             | - Warm, polished surface with higher reflectivity.      <br>- Classic and durable with a refined appearance.     | **Low absorption:0.25, high reflection**  | Feature walls or executive spaces.               |
 
 #### **Light Reflection**
 The light reflection level is influenced by:
@@ -27,9 +33,9 @@ Here’s the updated table with **sound absorption** added and explanations for 
 
 | **Light Reflection** | **Material**         | **Key Features**                                           | **Sound Absorption**                       | **Best For**                               |
 |-----------------------|----------------------|-----------------------------------------------------------|--------------------------------------------|--------------------------------------------|
-| **Low**              | Rubber              | - Soft, matte surface with low reflectivity.               <br>- Excellent sound absorption due to its flexibility and porosity. | **High**                                    | Collaborative workspaces, high-use areas   |
-| **Medium**           | Matte Laminate      | - Durable and scratch-resistant finish with moderate reflectivity. <br>- Provides moderate sound absorption because of its multi-layer construction. | **Moderate**                                | General office desks                       |
-| **High**             | Tempered Glass      | - Hard, glossy, and smooth surface with high reflectivity. <br>- Poor sound absorption due to its density and rigidity. | **Low**                                     | Executive desks, visually striking spaces  |
+| **Low**              | Rubber              | - Soft, matte surface with low reflectivity.               <br>- Excellent sound absorption due to its flexibility and porosity. | **High: 0.75**                                    | Collaborative workspaces, high-use areas   |
+| **Medium**           | Matte Laminate      | - Durable and scratch-resistant finish with moderate reflectivity. <br>- Provides moderate sound absorption because of its multi-layer construction. | **Moderate: 0.50**                                | General office desks                       |
+| **High**             | Tempered Glass      | - Hard, glossy, and smooth surface with high reflectivity. <br>- Poor sound absorption due to its density and rigidity. | **Low:0.25**                                     | Executive desks, visually striking spaces  |
 
 #### Analysis:
 
